@@ -79,7 +79,7 @@ const Blog = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center px-10 py-3 rounded-full border border-accent text-accent font-medium text-sm hover:bg-accent hover:text-accent-foreground hover:navy-glow transition-all duration-200"
           >
-            Read More
+            Explore My Blog
           </a>
         </div>
       </ScrollAnimator>
