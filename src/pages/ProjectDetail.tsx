@@ -27,22 +27,22 @@ const ProjectDetail = () => {
       </ScrollAnimator>
 
       <ScrollAnimator delay={100}>
-        <h1 className="text-3xl md:text-5xl font-display font-bold text-foreground">{project.title}</h1>
+        <h1 className="text-3xl md:text-5xl font-display font-bold text-foreground text-center">{project.title}</h1>
       </ScrollAnimator>
 
       <ScrollAnimator delay={150}>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center justify-center gap-4">
           <span className="px-3 py-1 text-xs rounded-full border border-border text-muted-foreground">{project.category}</span>
           <span className="text-sm text-muted-foreground">{project.date}</span>
         </div>
       </ScrollAnimator>
 
       <ScrollAnimator delay={200}>
-        <p className="text-muted-foreground leading-relaxed max-w-3xl">{project.fullDescription}</p>
+        <p className="text-muted-foreground leading-relaxed max-w-3xl text-center mx-auto">{project.fullDescription}</p>
       </ScrollAnimator>
 
       <ScrollAnimator delay={250}>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap justify-center gap-2">
           {project.tools.map((tool) => (
             <span key={tool} className="px-3 py-1.5 text-xs rounded-full border border-accent/30 text-accent font-medium">
               {tool}
@@ -52,7 +52,7 @@ const ProjectDetail = () => {
       </ScrollAnimator>
 
       <ScrollAnimator delay={300}>
-        <div className="flex flex-wrap gap-4 pt-4">
+        <div className="flex flex-wrap justify-center gap-4 pt-4">
           <a
             href={project.liveUrl}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-accent text-accent-foreground font-medium text-sm hover:navy-glow transition-all duration-200"
