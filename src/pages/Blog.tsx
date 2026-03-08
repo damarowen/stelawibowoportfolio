@@ -30,7 +30,7 @@ const Blog = () => {
   return (
     <div className="space-y-12 pb-20">
       <ScrollAnimator>
-        <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground">My Blog</h1>
+        <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground text-center">My Blog</h1>
       </ScrollAnimator>
       <ScrollAnimator delay={100}>
         <p className="text-muted-foreground max-w-2xl leading-relaxed">
