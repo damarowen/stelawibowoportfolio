@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Home, Layers, BookOpen, Mail, Linkedin, MessageCircle, Menu, X } from "lucide-react";
+import { Home, Layers, BookOpen, Mail, Linkedin, MessageCircle, Menu, X, Sparkles } from "lucide-react";
 
 const navItems = [
   { label: "Home", path: "/", icon: Home },
@@ -37,12 +37,9 @@ const AppSidebar = () => {
     <div className="flex flex-col h-full justify-between py-8 px-5">
       <div>
         {/* Available badge */}
-        <div className="flex items-center gap-2 px-3 py-2 rounded-full bg-muted/50 border border-border mb-10 w-fit">
-          <span className="relative flex h-2.5 w-2.5">
-            <span className="animate-pulse-green absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500" />
-          </span>
-          <span className="text-xs font-body text-muted-foreground">Available for new Projects</span>
+        <div className="flex items-center gap-2 px-3 py-2 rounded-full border border-foreground/20 mb-10 w-fit">
+          <Sparkles className="w-3 h-3 text-foreground" />
+          <span className="text-xs font-body text-foreground">Available for new Projects</span>
         </div>
 
         {/* Nav links */}
