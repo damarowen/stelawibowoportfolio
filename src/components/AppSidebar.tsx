@@ -67,7 +67,7 @@ const AppSidebar = () => {
       </div>
 
       {/* Social icons */}
-      <div className="flex items-center gap-3 px-4">
+      <div className="flex items-center justify-center gap-3 px-4">
         <a
           href="https://linkedin.com/in/placeholder"
           target="_blank"
