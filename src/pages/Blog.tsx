@@ -40,6 +40,14 @@ const Blog = () => {
 
       <ScrollAnimator delay={200}>
         <div className="relative">
+          <div className="flex items-center justify-end gap-3 mb-4">
+            <button onClick={() => scrollTo("left")} className="p-2 rounded-full border border-border text-muted-foreground hover:text-accent hover:border-accent transition-all">
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+            <button onClick={() => scrollTo("right")} className="p-2 rounded-full border border-border text-muted-foreground hover:text-accent hover:border-accent transition-all">
+              <ChevronRight className="w-5 h-5" />
+            </button>
+          </div>
           <div
             ref={scrollRef}
             className="flex gap-6 overflow-x-auto pb-4"
@@ -59,14 +67,6 @@ const Blog = () => {
                 </div>
               </div>
             ))}
-          </div>
-          <div className="flex items-center gap-3 mt-6">
-            <button onClick={() => scrollTo("left")} className="p-2 rounded-full border border-border text-muted-foreground hover:text-accent hover:border-accent transition-all">
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            <button onClick={() => scrollTo("right")} className="p-2 rounded-full border border-border text-muted-foreground hover:text-accent hover:border-accent transition-all">
-              <ChevronRight className="w-5 h-5" />
-            </button>
           </div>
         </div>
       </ScrollAnimator>
