@@ -41,10 +41,10 @@ const Blog = () => {
       <ScrollAnimator delay={200}>
         <div className="relative">
           <div className="flex items-center justify-end gap-3 mb-4">
-            <button onClick={() => scrollTo("left")} className="p-2.5 rounded-full bg-primary/20 border border-primary/40 text-primary hover:bg-primary/30 hover:border-primary/60 transition-all">
+            <button onClick={() => scrollTo("left")} className="p-2.5 rounded-full bg-primary/20 border border-primary/40 text-foreground hover:bg-primary/30 hover:border-primary/60 transition-all">
               <ChevronLeft className="w-5 h-5" />
             </button>
-            <button onClick={() => scrollTo("right")} className="p-2.5 rounded-full bg-primary/20 border border-primary/40 text-primary hover:bg-primary/30 hover:border-primary/60 transition-all">
+            <button onClick={() => scrollTo("right")} className="p-2.5 rounded-full bg-primary/20 border border-primary/40 text-foreground hover:bg-primary/30 hover:border-primary/60 transition-all">
               <ChevronRight className="w-5 h-5" />
             </button>
           </div>
