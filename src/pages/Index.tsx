@@ -68,10 +68,12 @@ const Index = () => {
               <h1 className="text-5xl md:text-7xl font-display font-bold tracking-tight text-foreground leading-tight">
                 John Doe
               </h1>
-              <div className="space-y-2">
-                <p className="text-xl md:text-2xl font-display font-medium text-primary">Social Media Specialist</p>
-                <p className="text-xl md:text-2xl font-display font-medium text-primary/80">Content Strategist</p>
-                <p className="text-xl md:text-2xl font-display font-medium text-primary/60">Digital Creator</p>
+              <div className="flex items-center gap-3 flex-wrap">
+                <span className="text-xl md:text-2xl font-display font-medium text-primary">Social Media Specialist</span>
+                <span className="text-xl md:text-2xl font-display font-medium text-muted-foreground/40">|</span>
+                <span className="text-xl md:text-2xl font-display font-medium text-primary/80">Content Strategist</span>
+                <span className="text-xl md:text-2xl font-display font-medium text-muted-foreground/40">|</span>
+                <span className="text-xl md:text-2xl font-display font-medium text-primary/60">Digital Creator</span>
               </div>
               <p className="text-muted-foreground leading-relaxed max-w-lg text-sm md:text-base">
                 I'm a social media specialist based in Indonesia, focused on crafting compelling content strategies and growing online communities. I bridge the gap between brands and their audiences through data-driven campaigns and creative storytelling. My goal is to amplify brand presence and drive meaningful engagement across all platforms. Currently open to freelance projects and collaborations.
