@@ -50,7 +50,7 @@ const AppSidebar = () => {
               key={item.label}
               to={item.path === "/#contact" ? "/" : item.path}
               onClick={() => handleNav(item.path)}
-              className={`flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 group ${
+              className={`flex items-center px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 group ${
                 isActive(item.path)
                   ? "text-accent bg-accent/10"
                   : "text-muted-foreground hover:text-accent hover:bg-accent/5"
@@ -59,8 +59,8 @@ const AppSidebar = () => {
               {isActive(item.path) && (
                 <span className="w-1 h-5 rounded-full bg-accent mr-1" />
               )}
-              <item.icon className="w-4 h-4" />
-              <span>{item.label}</span>
+              <item.icon className="w-4 h-4 shrink-0" />
+              <span className="flex-1 text-center">{item.label}</span>
             </Link>
           ))}
         </nav>
