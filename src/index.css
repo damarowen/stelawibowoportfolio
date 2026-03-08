@@ -22,9 +22,9 @@
     --secondary-foreground: 0 0% 100%;
 
     --muted: 240 30% 12%;
-    --muted-foreground: 215 25% 63%;
+    --muted-foreground: 0 0% 85%;
 
-    --accent: 226 70% 33%;
+    --accent: 349 73% 44%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,18 +32,18 @@
 
     --border: 240 20% 15%;
     --input: 240 20% 15%;
-    --ring: 226 70% 33%;
+    --ring: 349 73% 44%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 240 40% 5.5%;
     --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 226 70% 33%;
+    --sidebar-primary: 349 73% 44%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 30% 12%;
+    --sidebar-accent: 349 73% 15%;
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 240 20% 13%;
-    --sidebar-ring: 226 70% 33%;
+    --sidebar-ring: 349 73% 44%;
 
     --navy-glow: 0 0 20px rgba(30, 58, 138, 0.4);
     --primary-glow: 0 0 20px rgba(196, 30, 58, 0.3);
@@ -64,10 +64,10 @@
 
 @layer utilities {
   .navy-glow {
-    box-shadow: 0 0 20px rgba(30, 58, 138, 0.4);
+    box-shadow: 0 0 20px rgba(196, 30, 58, 0.3);
   }
   .navy-glow-lg {
-    box-shadow: 0 0 40px rgba(30, 58, 138, 0.5);
+    box-shadow: 0 0 40px rgba(196, 30, 58, 0.4);
   }
   .primary-glow {
     box-shadow: 0 0 20px rgba(196, 30, 58, 0.3);
