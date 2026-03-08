@@ -6,7 +6,7 @@ import serviceBrand from "@/assets/service-brand.jpg";
 import { projects } from "@/data/projects";
 import { Link } from "react-router-dom";
 import { useRef, useState } from "react";
-import { Linkedin, Mail, MessageCircle, Send, Sparkles } from "lucide-react";
+import { ChevronLeft, ChevronRight, Linkedin, Mail, MessageCircle, Send, Sparkles } from "lucide-react";
 
 const techTools = [
   "Instagram", "TikTok", "Meta Business Suite", "Hootsuite", "Buffer",
@@ -38,6 +38,19 @@ const Index = () => {
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [projectIndex, setProjectIndex] = useState(0);
+
+  const scrollProjectTo = (dir: "left" | "right") => {
+    const container = carouselRef.current;
+    if (!container) return;
+    const cardWidth = container.children[0]?.clientWidth || 320;
+    const gap = 24;
+    const newIndex = dir === "left"
+      ? Math.max(0, projectIndex - 1)
+      : Math.min(projects.length - 1, projectIndex + 1);
+    setProjectIndex(newIndex);
+    container.scrollTo({ left: newIndex * (cardWidth + gap), behavior: "smooth" });
+  };
 
   const handleMouseDown = (e: React.MouseEvent) => {
     setIsDragging(true);
@@ -87,7 +100,7 @@ const Index = () => {
       {/* Services */}
       <section>
         <ScrollAnimator>
-          <div className="flex items-center gap-3 mb-12">
+          <div className="flex items-center justify-center gap-3 mb-12">
             <Sparkles className="w-6 h-6 text-primary" />
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">Services</h2>
           </div>
@@ -112,9 +125,11 @@ const Index = () => {
       {/* Tech Stack */}
       <section>
         <ScrollAnimator>
-          <span className="inline-block px-4 py-1.5 text-xs font-medium border border-border rounded-full text-muted-foreground mb-8">
-            TECH STACK
-          </span>
+          <div className="text-center">
+            <span className="inline-block px-4 py-1.5 text-xs font-medium border border-border rounded-full text-muted-foreground mb-8">
+              TECH STACK
+            </span>
+          </div>
         </ScrollAnimator>
         <div className="overflow-hidden">
           <div className="animate-scroll-left flex gap-12 items-center w-max">
@@ -133,10 +148,19 @@ const Index = () => {
       {/* Projects Preview */}
       <section>
         <ScrollAnimator>
-          <span className="inline-block px-4 py-1.5 text-xs font-medium border border-border rounded-full text-muted-foreground mb-8">
-            PROJECTS
-          </span>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <Sparkles className="w-6 h-6 text-primary" />
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">Projects</h2>
+          </div>
         </ScrollAnimator>
+        <div className="flex items-center justify-end gap-3 mb-4">
+          <button onClick={() => scrollProjectTo("left")} className="p-2 rounded-full border border-border text-muted-foreground hover:text-accent hover:border-accent transition-all">
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+          <button onClick={() => scrollProjectTo("right")} className="p-2 rounded-full border border-border text-muted-foreground hover:text-accent hover:border-accent transition-all">
+            <ChevronRight className="w-5 h-5" />
+          </button>
+        </div>
         <div
           ref={carouselRef}
           onMouseDown={handleMouseDown}
@@ -167,18 +191,18 @@ const Index = () => {
       {/* Contact */}
       <section id="contact">
         <ScrollAnimator>
-          <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-12">
+          <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-12 text-center">
             Let's Work Together!
           </h2>
         </ScrollAnimator>
         <ScrollAnimator delay={100}>
           <div className="bg-card rounded-2xl border border-border p-8 md:p-12 space-y-8">
-            <div>
+            <div className="text-center">
               <h3 className="text-2xl font-display font-semibold text-foreground mb-2">Get in Touch</h3>
-              <div className="w-16 h-1 rounded-full bg-accent" />
+              <div className="w-16 h-1 rounded-full bg-accent mx-auto" />
             </div>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-center gap-4">
               <a href="https://linkedin.com/in/placeholder" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-5 py-3 rounded-xl bg-secondary border border-border text-foreground text-sm font-medium hover:navy-glow transition-all duration-200">
                 <Linkedin className="w-4 h-4" /> LinkedIn
               </a>
