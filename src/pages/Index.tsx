@@ -154,10 +154,10 @@ const Index = () => {
           </div>
         </ScrollAnimator>
         <div className="flex items-center justify-end gap-3 mb-4">
-          <button onClick={() => scrollProjectTo("left")} className="p-2 rounded-full border border-border text-muted-foreground hover:text-accent hover:border-accent transition-all">
+          <button onClick={() => scrollProjectTo("left")} className="p-2.5 rounded-full bg-primary/20 border border-primary/40 text-primary hover:bg-primary/30 hover:border-primary/60 transition-all">
             <ChevronLeft className="w-5 h-5" />
           </button>
-          <button onClick={() => scrollProjectTo("right")} className="p-2 rounded-full border border-border text-muted-foreground hover:text-accent hover:border-accent transition-all">
+          <button onClick={() => scrollProjectTo("right")} className="p-2.5 rounded-full bg-primary/20 border border-primary/40 text-primary hover:bg-primary/30 hover:border-primary/60 transition-all">
             <ChevronRight className="w-5 h-5" />
           </button>
         </div>
