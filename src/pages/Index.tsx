@@ -125,10 +125,9 @@ const Index = () => {
       {/* Tech Stack */}
       <section>
         <ScrollAnimator>
-          <div className="text-center">
-            <span className="inline-block px-4 py-1.5 text-xs font-medium border border-border rounded-full text-muted-foreground mb-8">
-              TECH STACK
-            </span>
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <Sparkles className="w-6 h-6 text-primary" />
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">Tech Stack</h2>
           </div>
         </ScrollAnimator>
         <div className="overflow-hidden">
