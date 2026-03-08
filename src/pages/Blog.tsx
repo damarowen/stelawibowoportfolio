@@ -33,7 +33,7 @@ const Blog = () => {
         <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground text-center">My Blog</h1>
       </ScrollAnimator>
       <ScrollAnimator delay={100}>
-        <p className="text-muted-foreground max-w-2xl leading-relaxed">
+        <p className="text-muted-foreground max-w-2xl leading-relaxed text-center mx-auto">
           Welcome to my blog where I share thoughts on social media strategy, content creation, and the digital marketing landscape. I write about tools, workflows, and lessons learned from real campaigns. Dive in and feel free to reach out if something resonates with you.
         </p>
       </ScrollAnimator>
