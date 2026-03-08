@@ -9,25 +9,25 @@ import { useRef, useState } from "react";
 import { Linkedin, Mail, MessageCircle, Send, Sparkles } from "lucide-react";
 
 const techTools = [
-  "Figma", "Framer", "Webflow", "Notion", "Zapier", "Next.js",
-  "Tailwind CSS", "TypeScript", "VS Code", "Adobe XD", "Illustrator",
-  "Photoshop", "Lottie", "Airtable", "Slack",
+  "Instagram", "TikTok", "Meta Business Suite", "Hootsuite", "Buffer",
+  "Canva", "CapCut", "Google Analytics", "Sprout Social", "Later",
+  "Adobe Premiere", "Photoshop", "ChatGPT", "Notion", "Figma",
 ];
 
 const services = [
   {
-    title: "UI/UX Design",
-    description: "Crafting clean, user-centered interfaces that balance aesthetics with functionality for web and mobile platforms.",
+    title: "Social Media Management",
+    description: "Managing and growing brand presence across Instagram, TikTok, LinkedIn, Twitter, and other major platforms with strategic content.",
     image: serviceUiux,
   },
   {
-    title: "No-Code Development",
-    description: "Building fast, responsive websites and apps using Framer, Webflow, and other modern no-code tools.",
+    title: "Content Strategy",
+    description: "Developing data-driven content calendars and campaigns that boost engagement, reach, and conversions.",
     image: serviceNocode,
   },
   {
     title: "Brand Identity",
-    description: "Designing cohesive visual identities that communicate your brand's personality and values effectively.",
+    description: "Designing cohesive visual identities and social media branding that communicate your brand's personality effectively.",
     image: serviceBrand,
   },
 ];
@@ -69,12 +69,12 @@ const Index = () => {
                 John Doe
               </h1>
               <div className="space-y-2">
-                <p className="text-xl md:text-2xl font-display font-medium text-primary">UI/UX Designer</p>
-                <p className="text-xl md:text-2xl font-display font-medium text-primary/80">No-Code Developer</p>
+                <p className="text-xl md:text-2xl font-display font-medium text-primary">Social Media Specialist</p>
+                <p className="text-xl md:text-2xl font-display font-medium text-primary/80">Content Strategist</p>
                 <p className="text-xl md:text-2xl font-display font-medium text-primary/60">Digital Creator</p>
               </div>
               <p className="text-muted-foreground leading-relaxed max-w-lg text-sm md:text-base">
-                I'm a product designer based in Indonesia, focused on crafting intuitive digital experiences for websites and mobile apps. I bridge the gap between design and technology through thoughtful user research and clean visual execution. My goal is to solve real human problems while helping businesses achieve their objectives. Currently open to freelance projects and collaborations.
+                I'm a social media specialist based in Indonesia, focused on crafting compelling content strategies and growing online communities. I bridge the gap between brands and their audiences through data-driven campaigns and creative storytelling. My goal is to amplify brand presence and drive meaningful engagement across all platforms. Currently open to freelance projects and collaborations.
               </p>
             </div>
           </ScrollAnimator>

@@ -6,9 +6,9 @@ import blog2 from "@/assets/blog-2.jpg";
 import blog3 from "@/assets/blog-3.jpg";
 
 const blogPosts = [
-  { title: "Design Systems That Scale", excerpt: "How to build and maintain design systems for growing teams.", image: blog1, date: "Feb 12, 2025" },
-  { title: "The No-Code Revolution", excerpt: "Why no-code tools are changing how we build digital products.", image: blog2, date: "Jan 28, 2025" },
-  { title: "Typography in Digital Design", excerpt: "Choosing the right fonts for your next web project.", image: blog3, date: "Dec 15, 2024" },
+  { title: "Growing Your Brand on Social Media", excerpt: "Strategies to build an engaged community across platforms.", image: blog1, date: "Feb 12, 2025" },
+  { title: "Content That Converts", excerpt: "Why storytelling and data-driven content are the future of social media.", image: blog2, date: "Jan 28, 2025" },
+  { title: "Mastering Short-Form Video", excerpt: "Tips for creating viral Reels and TikToks that drive real engagement.", image: blog3, date: "Dec 15, 2024" },
 ];
 
 const Blog = () => {
@@ -34,7 +34,7 @@ const Blog = () => {
       </ScrollAnimator>
       <ScrollAnimator delay={100}>
         <p className="text-muted-foreground max-w-2xl leading-relaxed">
-          Welcome to my blog where I share thoughts on design, no-code development, and the creative process. I write about tools, workflows, and lessons learned from real projects. Dive in and feel free to reach out if something resonates with you.
+          Welcome to my blog where I share thoughts on social media strategy, content creation, and the digital marketing landscape. I write about tools, workflows, and lessons learned from real campaigns. Dive in and feel free to reach out if something resonates with you.
         </p>
       </ScrollAnimator>
 
