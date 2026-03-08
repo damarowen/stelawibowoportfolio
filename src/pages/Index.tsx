@@ -112,7 +112,7 @@ const Index = () => {
                 <div className="aspect-video overflow-hidden">
                   <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
-                <div className="p-6 space-y-3">
+                <div className="p-6 space-y-3 text-center">
                   <h3 className="text-lg font-display font-semibold text-foreground">{service.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
                 </div>
@@ -177,7 +177,7 @@ const Index = () => {
                   <div className="aspect-video overflow-hidden">
                     <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
-                  <div className="p-5 space-y-2">
+                  <div className="p-5 space-y-2 text-center">
                     <h3 className="font-display font-semibold text-foreground">{project.title}</h3>
                     <p className="text-sm text-muted-foreground">{project.description}</p>
                   </div>
