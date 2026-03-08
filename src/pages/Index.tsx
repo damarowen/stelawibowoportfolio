@@ -194,7 +194,7 @@ const Index = () => {
             <h2 className="text-2xl md:text-4xl font-display font-bold text-foreground mb-3">
               Let's Work Together!
             </h2>
-            <p className="text-sm md:text-base text-muted-foreground max-w-lg mx-auto">
+            <p className="text-sm md:text-base text-muted-foreground whitespace-nowrap mx-auto">
               Have a project or collaboration in mind? I'd be happy to hear from you
             </p>
           </div>
