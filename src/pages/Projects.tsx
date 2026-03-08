@@ -15,11 +15,11 @@ const Projects = () => {
   return (
     <div className="space-y-12 pb-20">
       <ScrollAnimator>
-        <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground">Projects</h1>
+        <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground text-center">Projects</h1>
       </ScrollAnimator>
 
       <ScrollAnimator delay={100}>
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap justify-center gap-3">
           {categories.map((cat) => (
             <button
               key={cat}
