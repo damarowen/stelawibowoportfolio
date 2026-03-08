@@ -59,7 +59,7 @@ const Blog = () => {
                   <div className="aspect-video overflow-hidden">
                     <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
-                  <div className="p-6 space-y-2">
+                  <div className="p-6 space-y-2 text-center">
                     <h3 className="font-display font-semibold text-foreground">{post.title}</h3>
                     <p className="text-sm text-muted-foreground">{post.excerpt}</p>
                     <p className="text-xs text-muted-foreground/60">{post.date}</p>
