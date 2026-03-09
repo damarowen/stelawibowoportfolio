@@ -52,13 +52,7 @@ const ProjectDetail = () => {
       </ScrollAnimator>
 
       <ScrollAnimator delay={300}>
-        <div className="flex flex-wrap justify-center gap-4 pt-4">
-          <a
-            href={project.liveUrl}
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-accent text-accent-foreground font-medium text-sm hover:navy-glow transition-all duration-200"
-          >
-            <ExternalLink className="w-4 h-4" /> View Live
-          </a>
+        <div className="flex justify-center pt-4">
           <Link
             to="/projects"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-muted-foreground hover:text-foreground font-medium text-sm transition-all duration-200"
