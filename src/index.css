@@ -15,7 +15,7 @@
     --popover: 240 40% 6%;
     --popover-foreground: 0 0% 100%;
 
-    --primary: 349 73% 44%;
+    --primary: 220 60% 35%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 240 40% 10%;
@@ -24,7 +24,7 @@
     --muted: 240 30% 12%;
     --muted-foreground: 0 0% 85%;
 
-    --accent: 349 73% 44%;
+    --accent: 220 60% 35%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,21 +32,21 @@
 
     --border: 240 20% 15%;
     --input: 240 20% 15%;
-    --ring: 349 73% 44%;
+    --ring: 220 60% 35%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 240 40% 5.5%;
     --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 349 73% 44%;
+    --sidebar-primary: 220 60% 35%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 349 73% 15%;
+    --sidebar-accent: 220 60% 15%;
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 240 20% 13%;
-    --sidebar-ring: 349 73% 44%;
+    --sidebar-ring: 220 60% 35%;
 
     --navy-glow: 0 0 20px rgba(30, 58, 138, 0.4);
-    --primary-glow: 0 0 20px rgba(196, 30, 58, 0.3);
+    --primary-glow: 0 0 20px rgba(30, 58, 138, 0.3);
   }
 }
 
@@ -64,13 +64,13 @@
 
 @layer utilities {
   .navy-glow {
-    box-shadow: 0 0 20px rgba(196, 30, 58, 0.3);
+    box-shadow: 0 0 20px rgba(30, 58, 138, 0.4);
   }
   .navy-glow-lg {
-    box-shadow: 0 0 40px rgba(196, 30, 58, 0.4);
+    box-shadow: 0 0 40px rgba(30, 58, 138, 0.5);
   }
   .primary-glow {
-    box-shadow: 0 0 20px rgba(196, 30, 58, 0.3);
+    box-shadow: 0 0 20px rgba(30, 58, 138, 0.4);
   }
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-foreground to-muted-foreground;
