@@ -64,4 +64,16 @@ export const projects: Project[] = [
     tools: ["Canva", "Google Analytics", "Meta Pixel", "Mailchimp", "Notion"],
     liveUrl: "#",
   },
+  {
+    id: "influencer-campaign",
+    title: "Influencer Campaign",
+    description: "End-to-end influencer marketing campaign for a lifestyle brand launch.",
+    category: "Branding",
+    date: "Apr 12, 2025",
+    image: brandImg,
+    fullDescription:
+      "A full-scale influencer marketing campaign coordinating 20+ micro and macro influencers across Instagram and TikTok for a lifestyle brand product launch. The project involved talent sourcing, contract negotiation, creative briefing, content review, and performance tracking. The campaign generated over 2M impressions and a 5x return on ad spend.",
+    tools: ["Later", "Sprout Social", "Canva", "CapCut", "Google Analytics"],
+    liveUrl: "#",
+  },
 ];
