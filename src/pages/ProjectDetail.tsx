@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { projects } from "@/data/projects";
 import ScrollAnimator from "@/components/ScrollAnimator";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 const ProjectDetail = () => {
   const { id } = useParams();
