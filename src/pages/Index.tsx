@@ -74,7 +74,7 @@ const Index = () => {
           <ScrollAnimator>
             <div className="space-y-8">
               <h1 className="text-5xl md:text-7xl font-display font-bold tracking-tight text-foreground leading-tight">
-                John Doe
+                Stela Wibowo
               </h1>
               <p className="text-xl md:text-2xl font-display font-medium text-primary">Social Media Specialist</p>
               <p className="text-muted-foreground leading-relaxed max-w-lg text-sm md:text-base">
