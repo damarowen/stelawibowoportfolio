@@ -85,7 +85,7 @@ const Index = () => {
           <ScrollAnimator delay={200}>
             <div className="flex justify-center lg:justify-end">
               <div className="w-60 md:w-68 lg:w-80 aspect-[3/4] rounded-3xl overflow-hidden navy-glow">
-                <img src={heroImg} alt="John Doe portrait" className="w-full h-full object-cover" />
+                <img src={heroImg} alt="Stela Wibowo portrait" className="w-full h-full object-cover object-top" />
               </div>
             </div>
           </ScrollAnimator>
