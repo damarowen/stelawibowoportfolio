@@ -109,7 +109,11 @@ const Index = () => {
                 </div>
                 <div className="p-6 space-y-3 text-center">
                   <h3 className="text-lg font-display font-semibold text-foreground">{service.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
+                  <ul className="space-y-1.5">
+                    {service.bullets.map((bullet) => (
+                      <li key={bullet} className="text-sm text-muted-foreground leading-relaxed">• {bullet}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </ScrollAnimator>
