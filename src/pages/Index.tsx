@@ -7,12 +7,7 @@ import { projects } from "@/data/projects";
 import { Link } from "react-router-dom";
 import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, Linkedin, Mail, MessageCircle, Send, Sparkles } from "lucide-react";
-
-const techTools = [
-  "Instagram", "TikTok", "Meta Business Suite", "Hootsuite", "Buffer",
-  "Canva", "CapCut", "Google Analytics", "Sprout Social", "Later",
-  "Adobe Premiere", "Photoshop", "ChatGPT", "Notion", "Figma",
-];
+import { toolItems } from "@/components/ToolIcons";
 
 const services = [
   {
