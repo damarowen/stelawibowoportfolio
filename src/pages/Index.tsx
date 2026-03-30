@@ -7,12 +7,7 @@ import { projects } from "@/data/projects";
 import { Link } from "react-router-dom";
 import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, Linkedin, Mail, MessageCircle, Send, Sparkles } from "lucide-react";
-
-const techTools = [
-  "Instagram", "TikTok", "Meta Business Suite", "Hootsuite", "Buffer",
-  "Canva", "CapCut", "Google Analytics", "Sprout Social", "Later",
-  "Adobe Premiere", "Photoshop", "ChatGPT", "Notion", "Figma",
-];
+import { toolItems } from "@/components/ToolIcons";
 
 const services = [
   {
@@ -132,12 +127,13 @@ const Index = () => {
         </ScrollAnimator>
         <div className="overflow-hidden">
           <div className="animate-scroll-left flex gap-12 items-center w-max">
-            {[...techTools, ...techTools].map((tool, i) => (
+            {[...toolItems, ...toolItems].map((tool, i) => (
               <span
-                key={`${tool}-${i}`}
-                className="text-muted-foreground text-lg font-display font-medium whitespace-nowrap hover:text-foreground hover:scale-110 transition-all duration-200 cursor-default"
+                key={`${tool.name}-${i}`}
+                className="flex items-center gap-2 text-muted-foreground text-lg font-display font-medium whitespace-nowrap hover:text-foreground hover:scale-110 transition-all duration-200 cursor-default"
               >
-                {tool}
+                {tool.icon}
+                {tool.name}
               </span>
             ))}
           </div>
