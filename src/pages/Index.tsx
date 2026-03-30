@@ -102,16 +102,19 @@ const Index = () => {
         </ScrollAnimator>
         <div className="grid md:grid-cols-3 gap-6">
           {services.map((service, i) => (
-            <ScrollAnimator key={service.title} delay={i * 100}>
-              <div className="group bg-card rounded-2xl overflow-hidden border border-border hover:navy-glow transition-all duration-300">
+            <ScrollAnimator key={service.title} delay={i * 100} className="h-full">
+              <div className="group bg-card rounded-2xl overflow-hidden border border-border hover:navy-glow transition-all duration-300 h-full flex flex-col">
                 <div className="aspect-video overflow-hidden">
                   <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
-                <div className="p-6 space-y-3 text-center">
-                  <h3 className="text-lg font-display font-semibold text-foreground">{service.title}</h3>
-                  <ul className="space-y-1.5">
+                <div className="p-6 flex flex-col flex-1">
+                  <h3 className="text-lg font-display font-semibold text-foreground text-center mb-4">{service.title}</h3>
+                  <ul className="space-y-2 pl-1">
                     {service.bullets.map((bullet) => (
-                      <li key={bullet} className="text-sm text-muted-foreground leading-relaxed">• {bullet}</li>
+                      <li key={bullet} className="flex items-start gap-2 text-sm text-muted-foreground leading-relaxed">
+                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                        {bullet}
+                      </li>
                     ))}
                   </ul>
                 </div>
