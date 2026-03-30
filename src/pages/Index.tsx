@@ -11,18 +11,18 @@ import { toolItems } from "@/components/ToolIcons";
 
 const services = [
   {
-    title: "Social Media Management",
-    description: "Managing and growing brand presence across Instagram, TikTok, LinkedIn, Twitter, and other major platforms with strategic content.",
+    title: "Social Media Strategy",
+    bullets: ["Audience & Market Insight", "Campaign & Content Planning", "Performance & Reporting Analysis"],
     image: serviceUiux,
   },
   {
-    title: "Content Strategy",
-    description: "Developing data-driven content calendars and campaigns that boost engagement, reach, and conversions.",
+    title: "Social Media Management",
+    bullets: ["Account & Platform Management", "Community Engagement", "Growth Optimization"],
     image: serviceNocode,
   },
   {
-    title: "Brand Identity",
-    description: "Designing cohesive visual identities and social media branding that communicate your brand's personality effectively.",
+    title: "Content Creation",
+    bullets: ["Content Ideation", "Copywriting", "Visual Design & Video Editing"],
     image: serviceBrand,
   },
 ];
@@ -109,7 +109,11 @@ const Index = () => {
                 </div>
                 <div className="p-6 space-y-3 text-center">
                   <h3 className="text-lg font-display font-semibold text-foreground">{service.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
+                  <ul className="space-y-1.5">
+                    {service.bullets.map((bullet) => (
+                      <li key={bullet} className="text-sm text-muted-foreground leading-relaxed">• {bullet}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </ScrollAnimator>
