@@ -73,7 +73,7 @@ const Index = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
           <ScrollAnimator>
             <div className="space-y-8">
-              <h1 className="text-5xl md:text-7xl font-display font-bold tracking-tight text-foreground leading-tight">
+              <h1 className="text-4xl md:text-6xl font-display font-bold tracking-tight text-foreground leading-tight whitespace-nowrap">
                 Stela Wibowo
               </h1>
               <p className="text-xl md:text-2xl font-display font-medium text-primary">Social Media Specialist</p>
