@@ -11,18 +11,18 @@ import { toolItems } from "@/components/ToolIcons";
 
 const services = [
   {
-    title: "Social Media Management",
-    description: "Managing and growing brand presence across Instagram, TikTok, LinkedIn, Twitter, and other major platforms with strategic content.",
+    title: "Social Media Strategy",
+    bullets: ["Audience & Market Insight", "Campaign & Content Planning", "Performance & Reporting Analysis"],
     image: serviceUiux,
   },
   {
-    title: "Content Strategy",
-    description: "Developing data-driven content calendars and campaigns that boost engagement, reach, and conversions.",
+    title: "Social Media Management",
+    bullets: ["Account & Platform Management", "Community Engagement", "Growth Optimization"],
     image: serviceNocode,
   },
   {
-    title: "Brand Identity",
-    description: "Designing cohesive visual identities and social media branding that communicate your brand's personality effectively.",
+    title: "Content Creation",
+    bullets: ["Content Ideation", "Copywriting", "Visual Design & Video Editing"],
     image: serviceBrand,
   },
 ];
