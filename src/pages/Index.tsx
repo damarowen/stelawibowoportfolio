@@ -22,7 +22,7 @@ const services = [
   },
   {
     title: "Content Creation",
-    bullets: ["Content Ideation", "Copywriting & Caption Optimization (engaging, persuasive, and audience-focused content)", "Visual Design & Video Editing"],
+    bullets: ["Content Ideation", "Copywriting & Caption Optimization", "Visual Design & Video Editing"],
     image: serviceBrand,
   },
 ];
