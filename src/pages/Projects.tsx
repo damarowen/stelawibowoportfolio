@@ -1,43 +1,16 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { projects } from "@/data/projects";
 import ScrollAnimator from "@/components/ScrollAnimator";
 
-const categories = ["All", "Website", "Mobile App", "Branding"];
-
 const Projects = () => {
-  const [activeFilter, setActiveFilter] = useState("All");
-
-  const filtered = activeFilter === "All"
-    ? projects
-    : projects.filter((p) => p.category === activeFilter);
-
   return (
     <div className="space-y-12 pb-20">
       <ScrollAnimator>
         <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground text-center">Projects</h1>
       </ScrollAnimator>
 
-      <ScrollAnimator delay={100}>
-        <div className="flex flex-wrap justify-center gap-3">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActiveFilter(cat)}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
-                activeFilter === cat
-                  ? "bg-accent text-accent-foreground"
-                  : "border border-border text-muted-foreground hover:text-accent hover:border-accent"
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-      </ScrollAnimator>
-
       <div className="grid md:grid-cols-2 gap-6">
-        {filtered.map((project, i) => (
+        {projects.map((project, i) => (
           <ScrollAnimator key={project.id} delay={i * 100}>
             <Link to={`/projects/${project.id}`} className="block group">
               <div className="bg-card rounded-2xl overflow-hidden border border-border hover:navy-glow transition-all duration-300">
