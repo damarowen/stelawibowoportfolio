@@ -227,37 +227,6 @@ const Index = () => {
               </a>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-3">
-              <div className="grid md:grid-cols-2 gap-3">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-2.5 rounded-xl bg-secondary border border-border text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-                />
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-2.5 rounded-xl bg-secondary border border-border text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-                />
-              </div>
-              <textarea
-                placeholder="Message"
-                rows={3}
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="w-full px-4 py-2.5 rounded-xl bg-secondary border border-border text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-accent resize-none"
-              />
-              <button
-                type="submit"
-                className="w-full flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl bg-accent text-accent-foreground font-medium text-sm hover:navy-glow transition-all duration-200"
-              >
-                <Send className="w-4 h-4" /> Send Message
-              </button>
-            </form>
           </div>
         </ScrollAnimator>
       </section>
