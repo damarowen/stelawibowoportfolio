@@ -27,13 +27,9 @@ const ProjectDetail = () => {
       </ScrollAnimator>
 
       <ScrollAnimator delay={100}>
-        <h1 className="text-3xl md:text-5xl font-display font-bold text-foreground text-center">{project.title}</h1>
-      </ScrollAnimator>
-
-      <ScrollAnimator delay={150}>
-        <div className="flex items-center justify-center gap-4">
-          <span className="px-3 py-1 text-xs rounded-full border border-border text-muted-foreground">{project.category}</span>
-          <span className="text-sm text-muted-foreground">{project.date}</span>
+        <div className="text-center space-y-3">
+          <h1 className="text-3xl md:text-5xl font-display font-bold text-foreground">{project.title}</h1>
+          <p className="text-lg text-muted-foreground">{project.description}</p>
         </div>
       </ScrollAnimator>
 
