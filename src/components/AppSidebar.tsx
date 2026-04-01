@@ -85,7 +85,7 @@ const AppSidebar = () => {
           <Mail className="w-4 h-4" />
         </a>
         <a
-          href="https://www.upwork.com"
+          href="https://www.upwork.com/freelancers/~013c524c90b5b3db06"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2.5 rounded-lg text-muted-foreground hover:text-accent hover:navy-glow transition-all duration-200"
