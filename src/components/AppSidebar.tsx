@@ -78,7 +78,7 @@ const AppSidebar = () => {
           <Linkedin className="w-4 h-4" />
         </a>
         <a
-          href="mailto:placeholder@email.com"
+          href="mailto:stelaayuwibowo232@gmail.com"
           className="p-2.5 rounded-lg text-muted-foreground hover:text-accent hover:navy-glow transition-all duration-200"
           title="Email"
         >
