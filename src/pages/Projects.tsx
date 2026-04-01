@@ -17,9 +17,12 @@ const Projects = () => {
                 <div className="aspect-video overflow-hidden">
                   <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
-                <div className="p-6 space-y-2 text-center">
+                <div className="p-6 space-y-3 text-center">
                   <h3 className="text-xl font-display font-semibold text-foreground">{project.title}</h3>
-                  <p className="text-sm text-muted-foreground">{project.description}</p>
+                  <div className="flex items-center justify-center gap-3">
+                    <span className="px-3 py-1 text-xs rounded-full border border-border text-muted-foreground">{project.category}</span>
+                    <span className="text-xs text-muted-foreground">{project.date}</span>
+                  </div>
                 </div>
               </div>
             </Link>
