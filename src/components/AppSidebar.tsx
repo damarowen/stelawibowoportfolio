@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Home, Layers, BookOpen, Mail, Linkedin, MessageCircle, Menu, X, Sparkles } from "lucide-react";
+import { Home, Layers, BookOpen, Mail, Linkedin, Menu, X, Sparkles } from "lucide-react";
 
 const navItems = [
   { label: "Home", path: "/", icon: Home },
