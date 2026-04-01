@@ -69,7 +69,7 @@ const AppSidebar = () => {
       {/* Social icons */}
       <div className="flex items-center justify-center gap-3 px-4">
         <a
-          href="https://linkedin.com/in/placeholder"
+          href="https://www.linkedin.com/in/stelawibowo"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2.5 rounded-lg text-muted-foreground hover:text-accent hover:navy-glow transition-all duration-200"
