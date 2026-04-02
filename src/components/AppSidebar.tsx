@@ -5,7 +5,7 @@ import { Home, Layers, Mail, Linkedin, Menu, X, Sparkles } from "lucide-react";
 const navItems = [
   { label: "Home", path: "/", icon: Home },
   { label: "Projects", path: "/projects", icon: Layers },
-  { label: "My Blog", path: "/blog", icon: BookOpen },
+  
   { label: "Contact Me", path: "/#contact", icon: Mail },
 ];
 
