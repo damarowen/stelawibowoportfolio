@@ -7,7 +7,7 @@ import StarBackground from "@/components/StarBackground";
 import AppSidebar from "@/components/AppSidebar";
 import Index from "./pages/Index";
 import Projects from "./pages/Projects";
-import Blog from "./pages/Blog";
+
 import ProjectDetail from "./pages/ProjectDetail";
 import NotFound from "./pages/NotFound";
 
