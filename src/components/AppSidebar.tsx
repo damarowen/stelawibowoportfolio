@@ -100,7 +100,8 @@ const AppSidebar = () => {
           href="https://www.freelancer.com/u/stelawibowo?frm=stelawibowo&sb=t"
           target="_blank"
           rel="noopener noreferrer"
-          className="p-2.5 rounded-lg text-muted-foreground hover:text-accent hover:navy-glow transition-all duration-200"
+          onClick={(e) => { e.preventDefault(); window.open("https://www.freelancer.com/u/stelawibowo?frm=stelawibowo&sb=t", "_blank", "noopener,noreferrer"); }}
+          className="p-2.5 rounded-lg text-muted-foreground hover:text-accent hover:navy-glow transition-all duration-200 cursor-pointer"
           title="Freelancer"
         >
           <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M4.738 0v.001C2.161 0 .055 2.106.055 4.683c0 2.578 2.107 4.684 4.683 4.684.609 0 1.22-.12 1.771-.333l1.284 1.284-1.073 1.073a4.682 4.682 0 00-1.982-.441c-2.577 0-4.683 2.106-4.683 4.683S2.161 20.317 4.738 20.317c2.576 0 4.683-2.106 4.683-4.683 0-.696-.161-1.378-.441-1.982l1.073-1.073 7.378 7.378A4.683 4.683 0 0020.745 24c2.576 0 4.683-2.106 4.683-4.683s-2.107-4.683-4.683-4.683a4.682 4.682 0 00-3.314 1.373L10.053 8.63a4.683 4.683 0 001.368-3.309V5.32c.001-2.577-2.105-4.683-4.683-4.683V0zm0 2.341a2.342 2.342 0 110 4.684 2.342 2.342 0 010-4.684zm15.369 10.269a2.341 2.341 0 11.001 4.683 2.341 2.341 0 01-.001-4.683zM4.738 13.293a2.342 2.342 0 110 4.683 2.342 2.342 0 010-4.683z"/></svg>
