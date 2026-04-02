@@ -210,7 +210,7 @@ const Index = () => {
             </div>
 
             <div className="flex flex-wrap justify-center gap-3">
-              <a href="https://www.linkedin.com/in/stelawibowo" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-secondary border border-border text-foreground text-sm font-medium hover:navy-glow transition-all duration-200">
+              <a href="https://www.linkedin.com/in/stelawibowo" target="_blank" rel="noopener noreferrer" onClick={(e) => { e.preventDefault(); window.open("https://www.linkedin.com/in/stelawibowo", "_blank", "noopener,noreferrer"); }} className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-secondary border border-border text-foreground text-sm font-medium hover:navy-glow transition-all duration-200 cursor-pointer">
                 <Linkedin className="w-4 h-4" /> LinkedIn
               </a>
               <a href="mailto:stelaayuwibowo232@gmail.com" className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-secondary border border-border text-foreground text-sm font-medium hover:navy-glow transition-all duration-200">
