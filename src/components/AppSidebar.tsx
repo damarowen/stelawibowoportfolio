@@ -72,7 +72,8 @@ const AppSidebar = () => {
           href="https://www.linkedin.com/in/stelawibowo"
           target="_blank"
           rel="noopener noreferrer"
-          className="p-2.5 rounded-lg text-muted-foreground hover:text-accent hover:navy-glow transition-all duration-200"
+          onClick={(e) => { e.preventDefault(); window.open("https://www.linkedin.com/in/stelawibowo", "_blank", "noopener,noreferrer"); }}
+          className="p-2.5 rounded-lg text-muted-foreground hover:text-accent hover:navy-glow transition-all duration-200 cursor-pointer"
           title="LinkedIn"
         >
           <Linkedin className="w-4 h-4" />
