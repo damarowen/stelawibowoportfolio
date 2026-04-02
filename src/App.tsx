@@ -7,7 +7,7 @@ import StarBackground from "@/components/StarBackground";
 import AppSidebar from "@/components/AppSidebar";
 import Index from "./pages/Index";
 import Projects from "./pages/Projects";
-import Blog from "./pages/Blog";
+
 import ProjectDetail from "./pages/ProjectDetail";
 import NotFound from "./pages/NotFound";
 
@@ -27,7 +27,7 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/projects/:id" element={<ProjectDetail />} />
-              <Route path="/blog" element={<Blog />} />
+              
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
