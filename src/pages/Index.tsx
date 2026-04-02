@@ -66,9 +66,22 @@ const Index = () => {
     setFormData({ name: "", email: "", message: "" });
   };
 
+  const skills = [
+    "Social Media Strategy",
+    "Organic Growth",
+    "Audience Research",
+    "Content Planning",
+    "Content Ideation",
+    "Copywriting",
+    "Social Media Management",
+    "Analytics & Reporting",
+    "A/B Testing",
+    "Community Engagement",
+  ];
+
   return (
     <div className="space-y-32 pb-20">
-      {/* Hero */}
+      {/* About Me */}
       <section className="min-h-[85vh] flex items-center">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
           <ScrollAnimator>
@@ -92,39 +105,26 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services */}
+      {/* Skills */}
       <section>
         <ScrollAnimator>
           <div className="flex items-center justify-center gap-3 mb-12">
             <Sparkles className="w-6 h-6 text-primary" />
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">Services</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">Skills</h2>
           </div>
         </ScrollAnimator>
-        <div className="grid md:grid-cols-3 gap-6">
-          {services.map((service, i) => (
-            <ScrollAnimator key={service.title} delay={i * 100} className="h-full">
-              <div className="group bg-card rounded-2xl overflow-hidden border border-border hover:navy-glow transition-all duration-300 h-full flex flex-col">
-                <div className="aspect-video overflow-hidden">
-                  <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                </div>
-                <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-lg font-display font-semibold text-foreground text-center mb-4">{service.title}</h3>
-                  <ul className="space-y-2 pl-1">
-                    {service.bullets.map((bullet) => (
-                      <li key={bullet} className="flex items-start gap-2 text-sm text-muted-foreground leading-relaxed">
-                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-                        {bullet}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+        <div className="flex flex-wrap justify-center gap-3">
+          {skills.map((skill, i) => (
+            <ScrollAnimator key={skill} delay={i * 60}>
+              <span className="inline-flex items-center px-5 py-2.5 rounded-full border border-border bg-card text-sm font-medium text-foreground font-display hover:bg-primary/10 hover:border-primary/40 hover:scale-105 transition-all duration-200 cursor-default">
+                {skill}
+              </span>
             </ScrollAnimator>
           ))}
         </div>
       </section>
 
-      {/* Tech Stack */}
+      {/* Tools */}
       <section>
         <ScrollAnimator>
           <div className="flex items-center justify-center gap-3 mb-12">
@@ -147,7 +147,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Projects Preview */}
+      {/* Projects */}
       <section>
         <ScrollAnimator>
           <div className="flex items-center justify-center gap-3 mb-4">
@@ -185,6 +185,38 @@ const Index = () => {
                   </div>
                 </div>
               </Link>
+            </ScrollAnimator>
+          ))}
+        </div>
+      </section>
+
+      {/* Services */}
+      <section>
+        <ScrollAnimator>
+          <div className="flex items-center justify-center gap-3 mb-12">
+            <Sparkles className="w-6 h-6 text-primary" />
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">Services</h2>
+          </div>
+        </ScrollAnimator>
+        <div className="grid md:grid-cols-3 gap-6">
+          {services.map((service, i) => (
+            <ScrollAnimator key={service.title} delay={i * 100} className="h-full">
+              <div className="group bg-card rounded-2xl overflow-hidden border border-border hover:navy-glow transition-all duration-300 h-full flex flex-col">
+                <div className="aspect-video overflow-hidden">
+                  <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div className="p-6 flex flex-col flex-1">
+                  <h3 className="text-lg font-display font-semibold text-foreground text-center mb-4">{service.title}</h3>
+                  <ul className="space-y-2 pl-1">
+                    {service.bullets.map((bullet) => (
+                      <li key={bullet} className="flex items-start gap-2 text-sm text-muted-foreground leading-relaxed">
+                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                        {bullet}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </ScrollAnimator>
           ))}
         </div>
