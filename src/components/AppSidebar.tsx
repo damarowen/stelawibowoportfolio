@@ -79,8 +79,9 @@ const AppSidebar = () => {
           <Linkedin className="w-4 h-4" />
         </a>
         <a
-          href="mailto:stelaayuwibowo232@gmail.com"
-          className="p-2.5 rounded-lg text-muted-foreground hover:text-accent hover:navy-glow transition-all duration-200"
+          href="mailto:stelaayuwibowo232@gmail.com?subject=Let's%20Work%20Together"
+          onClick={(e) => { e.preventDefault(); window.location.href = "mailto:stelaayuwibowo232@gmail.com?subject=Let's%20Work%20Together"; }}
+          className="p-2.5 rounded-lg text-muted-foreground hover:text-accent hover:navy-glow transition-all duration-200 cursor-pointer"
           title="Email"
         >
           <Mail className="w-4 h-4" />
