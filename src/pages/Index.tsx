@@ -241,10 +241,10 @@ const Index = () => {
         <ScrollAnimator>
           <div className="text-center mb-6">
             <h2 className="text-2xl md:text-4xl font-display font-bold text-foreground mb-3">
-              Let's Work Together!
+              Let's Grow Your Brand Online!
             </h2>
-            <p className="text-sm md:text-base text-muted-foreground whitespace-nowrap mx-auto">
-              Have a project or collaboration in mind? I'd be happy to hear from you
+            <p className="text-sm md:text-base text-muted-foreground mx-auto">
+              Let's shape a social media presence that accelerates your brand's growth.
             </p>
           </div>
         </ScrollAnimator>
