@@ -6,7 +6,8 @@ import serviceBrand from "@/assets/service-brand.jpg";
 import { projects } from "@/data/projects";
 import { Link } from "react-router-dom";
 import { useRef, useState } from "react";
-import { ChevronLeft, ChevronRight, Linkedin, Mail, MessageCircle, Send, Sparkles } from "lucide-react";
+import { ChevronLeft, ChevronRight, Linkedin, Mail, MessageCircle, Send, Sparkles, Plus, Minus } from "lucide-react";
+import { useState as useStateReact } from "react";
 import { toolItems } from "@/components/ToolIcons";
 
 const services = [
