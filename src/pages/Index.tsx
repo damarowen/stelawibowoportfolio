@@ -223,6 +223,19 @@ const Index = () => {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section>
+        <ScrollAnimator>
+          <div className="flex items-center justify-center gap-3 mb-12">
+            <Sparkles className="w-6 h-6 text-primary" />
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">FAQ</h2>
+          </div>
+        </ScrollAnimator>
+        <ScrollAnimator delay={100}>
+          <FAQAccordion />
+        </ScrollAnimator>
+      </section>
+
       {/* Contact */}
       <section id="contact">
         <ScrollAnimator>
