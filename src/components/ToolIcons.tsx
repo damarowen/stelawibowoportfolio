@@ -65,14 +65,6 @@ export const toolItems: ToolItem[] = [
     ),
   },
   {
-    name: "Hootsuite",
-    icon: (
-      <svg className={iconSize} viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 14.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5c.74 0 1.43.23 2 .63l-1.2 1.6A1.49 1.49 0 0011 11c-.83 0-1.5.67-1.5 1.5S10.17 14 11 14c.36 0 .69-.13.95-.35l1.15 1.25A3.48 3.48 0 0111 16.5zm4.5-1a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/>
-      </svg>
-    ),
-  },
-  {
     name: "Buffer",
     icon: (
       <svg className={iconSize} viewBox="0 0 24 24" fill="currentColor">
