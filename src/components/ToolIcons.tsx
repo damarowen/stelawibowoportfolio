@@ -65,14 +65,6 @@ export const toolItems: ToolItem[] = [
     ),
   },
   {
-    name: "Hootsuite",
-    icon: (
-      <svg className={iconSize} viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 14.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5c.74 0 1.43.23 2 .63l-1.2 1.6A1.49 1.49 0 0011 11c-.83 0-1.5.67-1.5 1.5S10.17 14 11 14c.36 0 .69-.13.95-.35l1.15 1.25A3.48 3.48 0 0111 16.5zm4.5-1a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/>
-      </svg>
-    ),
-  },
-  {
     name: "Buffer",
     icon: (
       <svg className={iconSize} viewBox="0 0 24 24" fill="currentColor">
@@ -89,34 +81,10 @@ export const toolItems: ToolItem[] = [
     ),
   },
   {
-    name: "Sprout Social",
-    icon: (
-      <svg className={iconSize} viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 2C9.5 2 7.2 3.3 6 5.3 4.3 5.8 3 7.4 3 9.3c0 2 1.3 3.7 3.2 4.2-.2.8-.2 1.7.1 2.5.5 1.5 1.8 2.6 3.3 2.9.3 1.8 1.8 3.1 3.4 3.1s3.1-1.3 3.4-3.1c1.5-.3 2.8-1.4 3.3-2.9.3-.8.3-1.7.1-2.5C21.7 13 23 11.3 23 9.3c0-1.9-1.3-3.5-3-4C18.8 3.3 16.5 2 14 2h-2z"/>
-      </svg>
-    ),
-  },
-  {
     name: "Later",
     icon: (
       <svg className={iconSize} viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 11h-4v-2h2V7h2v6z"/>
-      </svg>
-    ),
-  },
-  {
-    name: "Brandwatch",
-    icon: (
-      <svg className={iconSize} viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.36L19.09 8 12 11.64 4.91 8 12 4.36zM4 9.38l7 3.5v7.74l-7-3.5V9.38zm16 0v7.74l-7 3.5v-7.74l7-3.5z"/>
-      </svg>
-    ),
-  },
-  {
-    name: "BuzzSumo",
-    icon: (
-      <svg className={iconSize} viewBox="0 0 24 24" fill="currentColor">
-        <path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
       </svg>
     ),
   },
