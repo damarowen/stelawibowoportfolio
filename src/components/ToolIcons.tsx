@@ -81,14 +81,6 @@ export const toolItems: ToolItem[] = [
     ),
   },
   {
-    name: "Sprout Social",
-    icon: (
-      <svg className={iconSize} viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 2C9.5 2 7.2 3.3 6 5.3 4.3 5.8 3 7.4 3 9.3c0 2 1.3 3.7 3.2 4.2-.2.8-.2 1.7.1 2.5.5 1.5 1.8 2.6 3.3 2.9.3 1.8 1.8 3.1 3.4 3.1s3.1-1.3 3.4-3.1c1.5-.3 2.8-1.4 3.3-2.9.3-.8.3-1.7.1-2.5C21.7 13 23 11.3 23 9.3c0-1.9-1.3-3.5-3-4C18.8 3.3 16.5 2 14 2h-2z"/>
-      </svg>
-    ),
-  },
-  {
     name: "Later",
     icon: (
       <svg className={iconSize} viewBox="0 0 24 24" fill="currentColor">
