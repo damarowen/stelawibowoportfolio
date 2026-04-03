@@ -89,22 +89,6 @@ export const toolItems: ToolItem[] = [
     ),
   },
   {
-    name: "Brandwatch",
-    icon: (
-      <svg className={iconSize} viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.36L19.09 8 12 11.64 4.91 8 12 4.36zM4 9.38l7 3.5v7.74l-7-3.5V9.38zm16 0v7.74l-7 3.5v-7.74l7-3.5z"/>
-      </svg>
-    ),
-  },
-  {
-    name: "BuzzSumo",
-    icon: (
-      <svg className={iconSize} viewBox="0 0 24 24" fill="currentColor">
-        <path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-      </svg>
-    ),
-  },
-  {
     name: "Metricool",
     icon: (
       <svg className={iconSize} viewBox="0 0 24 24" fill="currentColor">
