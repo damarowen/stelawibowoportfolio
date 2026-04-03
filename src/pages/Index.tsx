@@ -175,14 +175,14 @@ const Index = () => {
         >
           {projects.map((project, i) => (
             <ScrollAnimator key={project.id} delay={i * 100} className="flex-shrink-0 w-72 md:w-80">
-              <Link to={`/projects/${project.id}`} className="block group">
-                <div className="bg-card rounded-2xl overflow-hidden border border-border hover:navy-glow transition-all duration-300">
+              <Link to={`/projects/${project.id}`} className="block group h-full">
+                <div className="bg-card rounded-2xl overflow-hidden border border-border hover:navy-glow transition-all duration-300 h-full flex flex-col">
                   <div className="aspect-video overflow-hidden">
                     <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
-                  <div className="p-5 space-y-2 text-center">
-                    <h3 className="font-display font-semibold text-foreground">{project.title}</h3>
-                    <p className="text-sm text-muted-foreground">{project.description}</p>
+                  <div className="p-5 space-y-2 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="font-display font-semibold text-foreground line-clamp-2">{project.title}</h3>
+                    <p className="text-sm text-muted-foreground line-clamp-2">{project.description}</p>
                   </div>
                 </div>
               </Link>
