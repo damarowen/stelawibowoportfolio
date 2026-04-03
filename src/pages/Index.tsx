@@ -7,6 +7,7 @@ import { projects } from "@/data/projects";
 import { Link } from "react-router-dom";
 import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, Linkedin, Mail, MessageCircle, Send, Sparkles } from "lucide-react";
+import FAQAccordion from "@/components/FAQAccordion";
 import { toolItems } from "@/components/ToolIcons";
 
 const services = [
@@ -220,6 +221,19 @@ const Index = () => {
             </ScrollAnimator>
           ))}
         </div>
+      </section>
+
+      {/* FAQ */}
+      <section>
+        <ScrollAnimator>
+          <div className="flex items-center justify-center gap-3 mb-12">
+            <Sparkles className="w-6 h-6 text-primary" />
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">FAQ</h2>
+          </div>
+        </ScrollAnimator>
+        <ScrollAnimator delay={100}>
+          <FAQAccordion />
+        </ScrollAnimator>
       </section>
 
       {/* Contact */}
