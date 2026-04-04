@@ -38,7 +38,7 @@ const AppSidebar = () => {
       <div>
         {/* Portfolio label */}
         <div className="mb-10 px-1">
-          <span className="text-sm font-display font-semibold tracking-[0.15em] text-muted-foreground uppercase">
+          <span className="text-lg font-display font-bold tracking-[0.18em] text-foreground uppercase">
             PORTFOLIO
           </span>
         </div>
