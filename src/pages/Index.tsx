@@ -101,7 +101,7 @@ const Index = () => {
               <div className="w-44 md:w-52 lg:w-64 aspect-[3/4] rounded-3xl overflow-hidden navy-glow">
                 <img src={heroImg} alt="Stela Wibowo portrait" className="w-full h-full object-cover object-top" />
               </div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card text-sm font-medium font-display text-foreground hover:border-primary/40 transition-colors duration-200">
+              <div className="mt-10 inline-flex items-center gap-2 px-4 py-2 rounded-full border bg-card text-sm font-medium font-display text-foreground transition-colors duration-200 badge-shine">
                 <span className="w-2 h-2 rounded-full bg-green-500 animate-[pulse-green_2s_ease-in-out_infinite]" />
                 Available For New Project
               </div>
