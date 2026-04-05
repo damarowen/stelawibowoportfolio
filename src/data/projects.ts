@@ -56,8 +56,8 @@ export const projects: Project[] = [
   },
   {
     id: "influencer-campaign",
-    title: "Paid Social Media Ads Strategy",
-    description: "Targeting the Right Audience for Maximum Campaign Results",
+    title: "Targeted Performance Strategy",
+    description: "Optimizing paid social ads for maximum campaign results and ROI.",
     image: brandImg,
     fullDescription:
       "A full-scale influencer marketing campaign coordinating 20+ micro and macro influencers across Instagram and TikTok for a lifestyle brand product launch. The project involved talent sourcing, contract negotiation, creative briefing, content review, and performance tracking. The campaign generated over 2M impressions and a 5x return on ad spend.",
