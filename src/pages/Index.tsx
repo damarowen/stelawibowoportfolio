@@ -91,9 +91,12 @@ const Index = () => {
               <h1 className="text-4xl md:text-6xl font-display font-bold tracking-tight text-foreground leading-tight whitespace-nowrap">
                 Stela Wibowo
               </h1>
-              <p className="text-xl md:text-2xl font-display font-medium text-primary">Social Media Specialist</p>
-              <p className="text-muted-foreground leading-relaxed max-w-lg text-sm md:text-base">
-                I'm a social media specialist based in Indonesia, focused on crafting compelling content strategies and growing online communities. I bridge the gap between brands and their audiences through data-driven campaigns and creative storytelling. My goal is to amplify brand presence and drive meaningful engagement across all platforms. Currently open to freelance projects and collaborations.
+              <p className="text-xl md:text-2xl font-display font-medium text-primary mt-1">Social Media Specialist</p>
+              <p className="text-muted-foreground leading-[1.85] max-w-lg text-sm md:text-[0.938rem] mt-2">
+                Hi, I'm a Social Media Specialist who helps brands grow through strategy and creative content. I specialize in organic growth strategy, social media management, and content creation, helping brands not just grow their reach, but build meaningful connections with their audience. I make sure every piece of content has a clear purpose behind it, so it's not just visually appealing but strategic, relevant, and built to perform.
+              </p>
+              <p className="text-muted-foreground leading-[1.85] max-w-lg text-sm md:text-[0.938rem]">
+                I'd love to help you grow your brand with purpose and build results that go beyond just numbers.
               </p>
             </div>
           </ScrollAnimator>
