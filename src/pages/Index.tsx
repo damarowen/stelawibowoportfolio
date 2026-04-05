@@ -68,16 +68,16 @@ const Index = () => {
   };
 
   const skills = [
-    "Social Media Strategy",
     "Organic Growth",
-    "Audience Research",
-    "Content Planning",
-    "Content Ideation",
+    "Content Strategy",
+    "Content Creation",
     "Copywriting",
-    "Social Media Management",
-    "Analytics & Reporting",
-    "A/B Testing",
-    "Community Engagement",
+    "Social SEO",
+    "Audience Research",
+    "Data Analytics",
+    "Community Building",
+    "Trend Forecasting",
+    "Social Management",
   ];
 
   return (
