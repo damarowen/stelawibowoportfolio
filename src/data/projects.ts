@@ -46,8 +46,8 @@ export const projects: Project[] = [
   },
   {
     id: "landing-page",
-    title: "Social Media Growth Strategy & Optimization",
-    description: "Improving Engagement, Reach, and Content Performance",
+    title: "Social Media SEO Copywriting",
+    description: "Crafting search-optimized captions that capture attention and drive action.",
     image: landingImg,
     fullDescription:
       "A high-performance campaign landing page designed to capture leads from social media traffic. The page features scroll-triggered animations, social proof elements from real customer testimonials, and a clear call-to-action flow optimized for mobile users coming from Instagram and TikTok. Achieved a 12% conversion rate from social traffic.",
