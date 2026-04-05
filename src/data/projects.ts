@@ -36,8 +36,8 @@ export const projects: Project[] = [
   },
   {
     id: "brand-redesign",
-    title: "High Converting Social Media Copywriting",
-    description: "Crafting Captions that Capture Attention & Drive Action",
+    title: "Digital Growth Roadmap",
+    description: "Long-term strategic planning and competitor gap analysis.",
     image: brandImg,
     fullDescription:
       "A comprehensive social media brand identity redesign for an emerging fintech company. The project included developing a cohesive visual language for all social platforms, creating content templates, defining brand voice guidelines, and establishing a content calendar strategy that increased engagement by 150% within the first quarter.",
