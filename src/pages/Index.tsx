@@ -13,17 +13,17 @@ import { toolItems } from "@/components/ToolIcons";
 const services = [
   {
     title: "Social Media Strategy",
-    bullets: ["Audience & Market Insight", "Campaign & Content Planning", "Performance & Reporting Analysis"],
+    bullets: ["Audience Research", "Competitor Analysis", "Growth Strategy"],
     image: serviceUiux,
   },
   {
     title: "Social Media Management",
-    bullets: ["Account & Platform Management", "Community Engagement", "Growth Optimization"],
+    bullets: ["Community Management", "Social Media SEO Optimization", "Account Audit"],
     image: serviceNocode,
   },
   {
     title: "Content Creation",
-    bullets: ["Content Ideation", "Copywriting & Caption Optimization", "Visual Design & Video Editing"],
+    bullets: ["Content Planning", "SEO Copywriting", "Visual Branding & Feed Design"],
     image: serviceBrand,
   },
 ];
