@@ -16,8 +16,8 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "dashboard-ui",
-    title: "Social Media Growth Campaign",
-    description: "Driving Engagement & Brand Awareness Through Strategic Content",
+    title: "Visual Identity & Feed Design",
+    description: "Creating consistent and aesthetically balanced Instagram content.",
     image: dashboardImg,
     fullDescription:
       "This social media analytics dashboard was designed to give marketers a bird's-eye view of key performance metrics across all platforms. The interface features real-time data visualization with interactive charts for engagement rates, follower growth, and content performance. Customizable widgets and a responsive layout ensure seamless use across devices.",
