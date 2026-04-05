@@ -26,8 +26,8 @@ export const projects: Project[] = [
   },
   {
     id: "ecommerce-app",
-    title: "Social Media Content Design & Visual Branding",
-    description: "Creating Consistent & Engaging Instagram Content",
+    title: "Strategic Organic Growth Campaign",
+    description: "Driving engagement and reach through research-backed content.",
     image: ecommerceImg,
     fullDescription:
       "A complete social media campaign for a mobile e-commerce brand. The project included influencer partnerships, user-generated content strategies, and platform-specific ad creatives. Special attention was given to TikTok Shop integration and Instagram Shopping features to create a seamless social commerce experience that drove a 3x increase in conversions.",
