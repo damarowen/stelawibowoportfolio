@@ -103,7 +103,7 @@ const Index = () => {
                 <img src={heroImg} alt="Stela Wibowo portrait" className="w-full h-full object-cover object-top" />
               </div>
               <div className="relative inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card text-sm font-medium font-display text-foreground hover:border-primary/40 transition-colors duration-200 overflow-hidden">
-                <span className="absolute inset-0 animate-shimmer bg-gradient-to-r from-transparent via-primary/15 to-transparent" />
+                <span className="absolute inset-0 animate-shimmer bg-gradient-to-r from-transparent via-foreground/10 to-transparent" />
                 <span className="relative w-2 h-2 rounded-full bg-green-500 animate-[pulse-green_2s_ease-in-out_infinite]" />
                 <span className="relative">Available For New Project</span>
               </div>
