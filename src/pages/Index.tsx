@@ -88,15 +88,12 @@ const Index = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
           <ScrollAnimator>
             <div className="space-y-8">
-              <h1 className="text-4xl md:text-6xl font-display font-bold tracking-tight text-foreground leading-tight whitespace-nowrap">
+              <h1 className="text-3xl md:text-5xl font-display font-bold tracking-tight text-foreground leading-tight whitespace-nowrap">
                 Stela Wibowo
               </h1>
-              <p className="text-xl md:text-2xl font-display font-medium text-primary mt-1">Social Media Specialist</p>
-              <p className="text-muted-foreground leading-[1.85] max-w-lg text-sm md:text-[0.938rem] mt-2">
-                Hi, I'm a Social Media Specialist who helps brands grow through strategy and creative content. I specialize in organic growth strategy, social media management, and content creation, helping brands not just grow their reach, but build meaningful connections with their audience. I make sure every piece of content has a clear purpose behind it, so it's not just visually appealing but strategic, relevant, and built to perform.
-              </p>
-              <p className="text-muted-foreground leading-[1.85] max-w-lg text-sm md:text-[0.938rem]">
-                I'd love to help you grow your brand with purpose and build results that go beyond just numbers.
+              <p className="text-lg md:text-xl font-display font-medium text-primary mt-1">Social Media Specialist</p>
+              <p className="text-muted-foreground leading-[1.85] max-w-lg text-sm md:text-[0.938rem] mt-2 text-justify">
+                Hi, I'm a Social Media Specialist who helps brands grow and build meaningful connections with their audience through thoughtful and strategic content. My expertise focuses on organic growth strategy, social media management, and content development, ensuring every piece of content is intentional, relevant, and built to perform. I approach content with purpose and precision, crafting strategies that go beyond aesthetics to deliver measurable impact. I'd love to help your brand grow with purpose and achieve results beyond numbers.
               </p>
             </div>
           </ScrollAnimator>
