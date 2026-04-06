@@ -4,32 +4,24 @@ import { cn } from "@/lib/utils";
 
 const faqItems = [
   {
-    question: "What services do you offer?",
-    answer: "I offer social media management, content creation, and organic growth strategies tailored to your brand.",
+    question: "How do you help grow social media organically?",
+    answer: "I focus on strategic content, consistency, and audience understanding to drive sustainable growth. Every piece of content is designed to increase reach, engagement, and meaningful connections.",
   },
   {
-    question: "How do you help grow social media organically?",
-    answer: "I combine data-driven strategy, high-performing content, and continuous optimization to drive consistent and scalable organic growth.",
+    question: "What services do you offer?",
+    answer: "I offer organic growth strategy, social media management, and content development, tailored to align with your brand goals.",
   },
   {
     question: "How long does it take to see results?",
-    answer: "Results vary depending on the project scope, strategy, and consistency of execution.",
+    answer: "Results typically start to show within 1–3 months, depending on your starting point, consistency, and strategy execution.",
   },
   {
-    question: "Do you create content or only manage accounts?",
-    answer: "I handle everything from strategy and content creation to full account management.",
-  },
-  {
-    question: "Which platforms do you specialize in?",
-    answer: "I specialize in Meta platforms (Instagram and Facebook) and TikTok, with the ability to adapt strategies across other platforms.",
-  },
-  {
-    question: "How do we start working together?",
-    answer: "You can contact me via email or LinkedIn, or hire me directly through Upwork or Freelancer.",
+    question: "How can we start working together?",
+    answer: "Simply reach out through the contact section, and we can discuss your goals and the best approach for your brand.",
   },
   {
     question: "What are your rates?",
-    answer: "My rates start from $3/hour and may vary depending on the project scope and requirements.",
+    answer: "My rates vary depending on your needs and scope of work, with packages starting from $3. Feel free to get in touch for a customized proposal tailored to your brand.",
   },
 ];
 
