@@ -25,7 +25,7 @@ export const projects: Project[] = [
   },
   {
     id: "copywriting",
-    title: "Social Media SEO Copywriting",
+    title: "Copywriting",
     description: "Crafting search-optimized captions that capture attention and drive action.",
     image: landingImg,
     fullDescription:
