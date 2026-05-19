@@ -1,7 +1,6 @@
 import dashboardImg from "@/assets/project-dashboard.jpg";
-import ecommerceImg from "@/assets/project-ecommerce.jpg";
-import brandImg from "@/assets/project-brand.jpg";
 import landingImg from "@/assets/project-landing.jpg";
+import brandImg from "@/assets/project-brand.jpg";
 
 export interface Project {
   id: string;
@@ -15,53 +14,33 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "dashboard-ui",
+    id: "visual-identity",
     title: "Visual Identity & Feed Design",
     description: "Creating consistent and aesthetically balanced Instagram content.",
     image: dashboardImg,
     fullDescription:
-      "This social media analytics dashboard was designed to give marketers a bird's-eye view of key performance metrics across all platforms. The interface features real-time data visualization with interactive charts for engagement rates, follower growth, and content performance. Customizable widgets and a responsive layout ensure seamless use across devices.",
-    tools: ["Meta Business Suite", "Google Analytics", "Hootsuite", "Canva", "Notion"],
+      "Crafting a cohesive visual identity and feed design that reflects the brand's personality across every post. The project focused on building consistent color palettes, typography, and layout systems that make the Instagram feed feel intentional, recognizable, and aesthetically balanced — turning casual scrollers into engaged followers.",
+    tools: ["Canva", "Photoshop", "Figma", "Meta Business Suite", "Notion"],
     liveUrl: "#",
   },
   {
-    id: "ecommerce-app",
-    title: "Strategic Organic Growth Campaign",
-    description: "Driving engagement and reach through research-backed content.",
-    image: ecommerceImg,
-    fullDescription:
-      "A complete social media campaign for a mobile e-commerce brand. The project included influencer partnerships, user-generated content strategies, and platform-specific ad creatives. Special attention was given to TikTok Shop integration and Instagram Shopping features to create a seamless social commerce experience that drove a 3x increase in conversions.",
-    tools: ["TikTok Ads", "Meta Ads Manager", "Canva", "CapCut", "Sprout Social"],
-    liveUrl: "#",
-  },
-  {
-    id: "brand-redesign",
-    title: "Digital Growth Roadmap",
-    description: "Long-term strategic planning and competitor gap analysis.",
-    image: brandImg,
-    fullDescription:
-      "A comprehensive social media brand identity redesign for an emerging fintech company. The project included developing a cohesive visual language for all social platforms, creating content templates, defining brand voice guidelines, and establishing a content calendar strategy that increased engagement by 150% within the first quarter.",
-    tools: ["Canva", "Photoshop", "Figma", "Later", "Buffer"],
-    liveUrl: "#",
-  },
-  {
-    id: "landing-page",
+    id: "copywriting",
     title: "Social Media SEO Copywriting",
     description: "Crafting search-optimized captions that capture attention and drive action.",
     image: landingImg,
     fullDescription:
-      "A high-performance campaign landing page designed to capture leads from social media traffic. The page features scroll-triggered animations, social proof elements from real customer testimonials, and a clear call-to-action flow optimized for mobile users coming from Instagram and TikTok. Achieved a 12% conversion rate from social traffic.",
+      "Writing search-optimized captions and copy designed to capture attention, spark engagement, and drive measurable action. Each piece blends keyword research, brand voice, and storytelling to make content discoverable on social platforms while staying authentic to the audience.",
     tools: ["Canva", "Google Analytics", "Meta Pixel", "Mailchimp", "Notion"],
     liveUrl: "#",
   },
   {
-    id: "influencer-campaign",
-    title: "Targeted Performance Strategy",
-    description: "Optimizing paid social ads for maximum campaign results and ROI.",
+    id: "case-study",
+    title: "Case Study",
+    description: "In-depth breakdown of strategy, execution, and measurable results.",
     image: brandImg,
     fullDescription:
-      "A full-scale influencer marketing campaign coordinating 20+ micro and macro influencers across Instagram and TikTok for a lifestyle brand product launch. The project involved talent sourcing, contract negotiation, creative briefing, content review, and performance tracking. The campaign generated over 2M impressions and a 5x return on ad spend.",
-    tools: ["Later", "Sprout Social", "Canva", "CapCut", "Google Analytics"],
+      "A deep-dive case study walking through the full journey of a social media project — from initial research and strategy, through content execution, all the way to performance analysis. It highlights the thinking behind each decision and the measurable results that followed.",
+    tools: ["Meta Business Suite", "Google Analytics", "Sprout Social", "Canva", "Notion"],
     liveUrl: "#",
   },
 ];
