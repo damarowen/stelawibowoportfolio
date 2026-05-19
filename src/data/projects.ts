@@ -2,6 +2,12 @@ import dashboardImg from "@/assets/project-dashboard.jpg";
 import landingImg from "@/assets/project-landing.jpg";
 import brandImg from "@/assets/project-brand.jpg";
 
+export interface Showcase {
+  image: string;
+  title: string;
+  description: string;
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -10,6 +16,7 @@ export interface Project {
   fullDescription: string;
   tools: string[];
   liveUrl: string;
+  showcases?: Showcase[];
 }
 
 export const projects: Project[] = [
@@ -32,6 +39,26 @@ export const projects: Project[] = [
       "Writing search-optimized captions and copy designed to capture attention, spark engagement, and drive measurable action. Each piece blends keyword research, brand voice, and storytelling to make content discoverable on social platforms while staying authentic to the audience.",
     tools: ["Canva", "Google Analytics", "Meta Pixel", "Mailchimp", "Notion"],
     liveUrl: "#",
+    showcases: [
+      {
+        image: landingImg,
+        title: "Hook-Driven Caption",
+        description:
+          "A scroll-stopping opening line paired with a clear value statement and CTA. Crafted to spark curiosity in the first three seconds and keep readers engaged through the full caption.",
+      },
+      {
+        image: dashboardImg,
+        title: "SEO-Optimized Carousel",
+        description:
+          "Captions structured around targeted keywords and search intent. Designed to surface in Instagram search results and Explore while still feeling natural and on-brand.",
+      },
+      {
+        image: brandImg,
+        title: "Story-Led Long Caption",
+        description:
+          "A narrative-driven caption that blends storytelling with brand voice, building emotional connection and guiding the audience toward a meaningful action.",
+      },
+    ],
   },
   {
     id: "case-study",

@@ -47,6 +47,31 @@ const ProjectDetail = () => {
         </div>
       </ScrollAnimator>
 
+      {project.showcases && (
+        <div className="space-y-12 pt-6">
+          {project.showcases.map((s, i) => (
+            <ScrollAnimator key={i} delay={i * 100}>
+              <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
+                {/* Phone mockup with IG feed */}
+                <div className="flex justify-center md:justify-start">
+                  <div className="relative w-[200px] md:w-[220px] aspect-[9/19] rounded-[2.2rem] bg-foreground/10 border-[6px] border-foreground/80 shadow-2xl overflow-hidden navy-glow">
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-5 bg-foreground/80 rounded-b-2xl z-10" />
+                    <div className="w-full h-full aspect-square">
+                      <img src={s.image} alt={s.title} className="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                </div>
+                {/* Description */}
+                <div className="space-y-3 text-center md:text-left">
+                  <h3 className="text-xl md:text-2xl font-display font-semibold text-foreground">{s.title}</h3>
+                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{s.description}</p>
+                </div>
+              </div>
+            </ScrollAnimator>
+          ))}
+        </div>
+      )}
+
       <ScrollAnimator delay={300}>
         <div className="flex justify-center pt-4">
           <Link
