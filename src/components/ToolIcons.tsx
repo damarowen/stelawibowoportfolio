@@ -105,18 +105,10 @@ export const toolItems: ToolItem[] = [
     ),
   },
   {
-    name: "Jasper AI",
+    name: "Gemini AI",
     icon: (
       <svg className={iconSize} viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 2l2.4 7.2H22l-6 4.8 2.4 7.2L12 16.4l-6.4 4.8L8 14 2 9.2h7.6L12 2z"/>
-      </svg>
-    ),
-  },
-  {
-    name: "MidJourney",
-    icon: (
-      <svg className={iconSize} viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+        <path d="M12 2L13.5 8.5L20 10L13.5 11.5L12 18L10.5 11.5L4 10L10.5 8.5L12 2Z"/>
       </svg>
     ),
   },
