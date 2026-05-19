@@ -164,25 +164,9 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">Projects</h2>
           </div>
         </ScrollAnimator>
-        <div className="flex items-center justify-end gap-3 mb-4">
-          <button onClick={() => scrollProjectTo("left")} className="p-2.5 rounded-full bg-primary/20 border border-foreground text-foreground hover:bg-primary/30 transition-all">
-            <ChevronLeft className="w-5 h-5" />
-          </button>
-          <button onClick={() => scrollProjectTo("right")} className="p-2.5 rounded-full bg-primary/20 border border-foreground text-foreground hover:bg-primary/30 transition-all">
-            <ChevronRight className="w-5 h-5" />
-          </button>
-        </div>
-        <div
-          ref={carouselRef}
-          onMouseDown={handleMouseDown}
-          onMouseMove={handleMouseMove}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseUp}
-          className="flex gap-6 overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing pb-4"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-        >
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {projects.map((project, i) => (
-            <ScrollAnimator key={project.id} delay={i * 100} className="flex-shrink-0 w-72 md:w-80">
+            <ScrollAnimator key={project.id} delay={i * 100} className="h-full">
               <Link to={`/projects/${project.id}`} className="block group h-full">
                 <div className="bg-card rounded-2xl overflow-hidden border border-border hover:navy-glow transition-all duration-300 h-full flex flex-col">
                   <div className="aspect-video overflow-hidden">
