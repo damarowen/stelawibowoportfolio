@@ -2,6 +2,12 @@ import dashboardImg from "@/assets/project-dashboard.jpg";
 import landingImg from "@/assets/project-landing.jpg";
 import brandImg from "@/assets/project-brand.jpg";
 
+export interface Showcase {
+  image: string;
+  title: string;
+  description: string;
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -10,6 +16,7 @@ export interface Project {
   fullDescription: string;
   tools: string[];
   liveUrl: string;
+  showcases?: Showcase[];
 }
 
 export const projects: Project[] = [
