@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { projects } from "@/data/projects";
 import ScrollAnimator from "@/components/ScrollAnimator";
+import SEO from "@/components/SEO";
 import { ArrowLeft } from "lucide-react";
 
 const ProjectDetail = () => {
@@ -10,6 +11,11 @@ const ProjectDetail = () => {
   if (!project) {
     return (
       <div className="flex items-center justify-center min-h-[60vh]">
+        <SEO
+          title="Project Not Found — Stela Wibowo"
+          description="The project you're looking for doesn't exist. Browse Stela Wibowo's full portfolio of social media projects."
+          path={`/projects/${id ?? ""}`}
+        />
         <div className="text-center space-y-4">
           <h1 className="text-2xl font-display font-bold text-foreground">Project Not Found</h1>
           <Link to="/projects" className="text-accent hover:underline text-sm">← Back to Projects</Link>
@@ -18,8 +24,15 @@ const ProjectDetail = () => {
     );
   }
 
+  const seoDesc = (project.description || "").slice(0, 155);
+
   return (
     <div className="space-y-10 pb-20">
+      <SEO
+        title={`${project.title} — Stela Wibowo Portfolio`}
+        description={seoDesc.length >= 50 ? seoDesc : `${project.title} by Stela Wibowo — ${seoDesc}`.slice(0, 155)}
+        path={`/projects/${project.id}`}
+      />
       <ScrollAnimator>
         <div className="aspect-video rounded-2xl overflow-hidden navy-glow">
           <img src={project.image} alt={project.title} className="w-full h-full object-cover" />

@@ -9,6 +9,7 @@ import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, Linkedin, Mail, MessageCircle, Send, Sparkles } from "lucide-react";
 import FAQAccordion from "@/components/FAQAccordion";
 import { toolItems } from "@/components/ToolIcons";
+import SEO from "@/components/SEO";
 
 const services = [
   {
@@ -83,6 +84,11 @@ const Index = () => {
 
   return (
     <div className="space-y-32 pb-20">
+      <SEO
+        title="Stela Wibowo — Social Media Specialist Portfolio"
+        description="Stela Wibowo's portfolio: social media strategy, management, and content creation that helps brands grow with intention."
+        path="/"
+      />
       {/* About Me */}
       <section className="min-h-[85vh] flex items-center">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
