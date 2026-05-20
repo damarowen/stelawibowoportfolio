@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import { cn } from "@/lib/utils";
 
 const faqItems = [
@@ -32,8 +33,21 @@ const FAQAccordion = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((i) => ({
+      "@type": "Question",
+      name: i.question,
+      acceptedAnswer: { "@type": "Answer", text: i.answer },
+    })),
+  };
+
   return (
     <div className="space-y-3">
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(faqLd)}</script>
+      </Helmet>
       {faqItems.map((item, index) => (
         <div
           key={index}
