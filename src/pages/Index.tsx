@@ -88,6 +88,23 @@ const Index = () => {
         title="Stela Wibowo — Social Media Specialist Portfolio"
         description="Stela Wibowo's portfolio: social media strategy, management, and content creation that helps brands grow with intention."
         path="/"
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Stela Wibowo",
+            jobTitle: "Social Media Specialist",
+            url: "https://stelawibowoportfolio.lovable.app/",
+          },
+          ...services.map((s) => ({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: s.title,
+            serviceType: s.title,
+            provider: { "@type": "Person", name: "Stela Wibowo" },
+            areaServed: "Worldwide",
+          })),
+        ]}
       />
       {/* About Me */}
       <section className="min-h-[85vh] flex items-center">
