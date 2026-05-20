@@ -1,10 +1,16 @@
 import { Link } from "react-router-dom";
 import { projects } from "@/data/projects";
 import ScrollAnimator from "@/components/ScrollAnimator";
+import SEO from "@/components/SEO";
 
 const Projects = () => {
   return (
     <div className="space-y-12 pb-20">
+      <SEO
+        title="Projects — Stela Wibowo Social Media Portfolio"
+        description="Selected social media projects by Stela Wibowo: visual identity and feed design, copywriting, and case studies."
+        path="/projects"
+      />
       <ScrollAnimator>
         <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground text-center">Projects</h1>
       </ScrollAnimator>
