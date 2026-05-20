@@ -106,7 +106,7 @@ const Index = () => {
           <ScrollAnimator delay={200}>
             <div className="flex flex-col items-center lg:items-end gap-4">
               <div className="w-44 md:w-52 lg:w-64 aspect-[3/4] rounded-3xl overflow-hidden navy-glow">
-                <img src={heroImg} alt="Stela Wibowo portrait" className="w-full h-full object-cover object-top" />
+                <img src={heroImg} alt="Stela Wibowo portrait" width="768" height="1024" fetchPriority="high" decoding="async" className="w-full h-full object-cover object-top" />
               </div>
               <div className="mt-10 relative inline-flex items-center gap-2 px-6 py-2 rounded-full border-2 border-foreground/40 bg-card text-sm font-medium font-display text-foreground hover:border-foreground/60 transition-colors duration-200 overflow-hidden">
                {/* shimmer */}
