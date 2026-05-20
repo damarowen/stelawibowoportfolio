@@ -4,12 +4,14 @@ interface SEOProps {
   title: string;
   description: string;
   path: string;
+  jsonLd?: object | object[];
 }
 
 const SITE = "https://stelawibowoportfolio.lovable.app";
 
-const SEO = ({ title, description, path }: SEOProps) => {
+const SEO = ({ title, description, path, jsonLd }: SEOProps) => {
   const url = `${SITE}${path}`;
+  const ldArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
   return (
     <Helmet>
       <title>{title}</title>
@@ -20,8 +22,12 @@ const SEO = ({ title, description, path }: SEOProps) => {
       <meta property="og:url" content={url} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
+      {ldArray.map((ld, i) => (
+        <script key={i} type="application/ld+json">{JSON.stringify(ld)}</script>
+      ))}
     </Helmet>
   );
 };
 
 export default SEO;
+
