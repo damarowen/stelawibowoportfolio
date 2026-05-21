@@ -1,5 +1,7 @@
 import { useParams, Link } from "react-router-dom";
+import { useState } from "react";
 import { projects } from "@/data/projects";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import ScrollAnimator from "@/components/ScrollAnimator";
 import SEO from "@/components/SEO";
 import {
