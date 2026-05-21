@@ -37,20 +37,15 @@ const ProjectDetail = () => {
   const seoDesc = (project.description || "").slice(0, 155);
 
   return (
-    <div className="space-y-10 pb-20">
+    <div className="space-y-10 pb-20 pt-4 md:pt-8">
       <SEO
         title={`${project.title} — Stela Wibowo Portfolio`}
         description={seoDesc.length >= 50 ? seoDesc : `${project.title} by Stela Wibowo — ${seoDesc}`.slice(0, 155)}
         path={`/projects/${project.id}`}
       />
-      <ScrollAnimator>
-        <div className="aspect-video rounded-2xl overflow-hidden navy-glow">
-          <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
-        </div>
-      </ScrollAnimator>
 
       <ScrollAnimator delay={100}>
-        <div className="text-center space-y-3">
+        <div className="text-center space-y-3 max-w-3xl mx-auto">
           <h1 className="text-3xl md:text-5xl font-display font-bold text-foreground">{project.title}</h1>
           <p className="text-lg text-muted-foreground">{project.description}</p>
         </div>
@@ -58,16 +53,6 @@ const ProjectDetail = () => {
 
       <ScrollAnimator delay={200}>
         <p className="text-muted-foreground leading-relaxed max-w-3xl text-center mx-auto">{project.fullDescription}</p>
-      </ScrollAnimator>
-
-      <ScrollAnimator delay={250}>
-        <div className="flex flex-wrap justify-center gap-2">
-          {project.tools.map((tool) => (
-            <span key={tool} className="px-3 py-1.5 text-xs rounded-full border border-accent/30 text-accent font-medium">
-              {tool}
-            </span>
-          ))}
-        </div>
       </ScrollAnimator>
 
       {project.showcases && (
