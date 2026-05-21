@@ -31,7 +31,31 @@ export const projects: Project[] = [
       "Crafting a cohesive visual identity and feed design that reflects the brand's personality across every post. The project focused on building consistent color palettes, typography, and layout systems that make the Instagram feed feel intentional, recognizable, and aesthetically balanced — turning casual scrollers into engaged followers.",
     tools: ["Canva", "Photoshop", "Figma", "Meta Business Suite", "Notion"],
     liveUrl: "#",
+    showcases: [
+      {
+        image: dashboardImg,
+        title: "Cohesive Feed Aesthetic",
+        description:
+          "A unified color palette, typography system, and grid layout that make every post feel like part of one intentional brand story.",
+        feedImages: Array(9).fill(dashboardImg),
+      },
+      {
+        image: landingImg,
+        title: "Content Pillar System",
+        description:
+          "Organized templates across distinct content pillars — education, inspiration, and engagement — so the feed stays varied yet visually balanced.",
+        feedImages: Array(9).fill(landingImg),
+      },
+      {
+        image: brandImg,
+        title: "Campaign Visual Storytelling",
+        description:
+          "A campaign-driven feed where each tile builds on the last, guiding followers through a clear narrative arc from launch to conversion.",
+        feedImages: Array(9).fill(brandImg),
+      },
+    ],
   },
+
   {
     id: "copywriting",
     title: "Copywriting",
