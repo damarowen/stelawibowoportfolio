@@ -125,6 +125,38 @@ const ProjectDetail = () => {
         </div>
       )}
 
+      {project.slides && project.slides.length > 0 && (
+        <div className="space-y-8 md:space-y-10 pt-6 max-w-4xl mx-auto w-full">
+          {project.slides.map((src, i) => (
+            <ScrollAnimator key={i} delay={Math.min(i * 50, 300)}>
+              <button
+                type="button"
+                onClick={() => setPreviewSrc(src)}
+                className="group block w-full aspect-video rounded-2xl overflow-hidden border border-border bg-card navy-glow transition-transform duration-300 hover:scale-[1.01] focus:outline-none focus:ring-2 focus:ring-accent"
+                aria-label={`Open slide ${i + 1}`}
+              >
+                <img
+                  src={src}
+                  alt={`${project.title} slide ${i + 1}`}
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:opacity-95"
+                />
+              </button>
+            </ScrollAnimator>
+          ))}
+        </div>
+      )}
+
+      <Dialog open={!!previewSrc} onOpenChange={(o) => !o && setPreviewSrc(null)}>
+        <DialogContent className="max-w-6xl p-2 bg-card border-border">
+          {previewSrc && (
+            <img src={previewSrc} alt="Slide preview" className="w-full h-auto rounded-lg" />
+          )}
+        </DialogContent>
+      </Dialog>
+
+
+
       <ScrollAnimator delay={300}>
         <div className="flex justify-center pt-4">
           <Link
