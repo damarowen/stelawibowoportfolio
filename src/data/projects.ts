@@ -19,6 +19,7 @@ export interface Project {
   tools: string[];
   liveUrl: string;
   showcases?: Showcase[];
+  slides?: string[];
 }
 
 export const projects: Project[] = [
