@@ -1,0 +1,13 @@
+# Stela Wibowo Portfolio
+
+> Portfolio of Stela Wibowo — Social Media Specialist focused on visual identity, feed design, copywriting, and case studies.
+
+The site is a single-page portfolio with a persistent sidebar. It covers Stela's background, skills, tools, projects, services, FAQ, and contact links.
+
+## Pages
+
+- [Home](/): About, skills, tools, projects, services, FAQ, and contact in one scroll.
+- [Projects](/projects): Overview of featured social media projects.
+- [Visual Identity & Feed Design](/projects/visual-identity): Cohesive Instagram feed systems, content pillars, and campaign visuals.
+- [Copywriting](/projects/copywriting): Search-optimized captions and brand-voice copy that drive engagement.
+- [Case Study](/projects/case-study): End-to-end breakdown of strategy, execution, and measurable results.
