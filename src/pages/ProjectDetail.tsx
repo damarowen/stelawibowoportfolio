@@ -16,6 +16,7 @@ import { ArrowLeft } from "lucide-react";
 const ProjectDetail = () => {
   const { id } = useParams();
   const project = projects.find((p) => p.id === id);
+  const [previewSrc, setPreviewSrc] = useState<string | null>(null);
 
   if (!project) {
     return (
