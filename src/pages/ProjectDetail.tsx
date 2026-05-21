@@ -2,6 +2,13 @@ import { useParams, Link } from "react-router-dom";
 import { projects } from "@/data/projects";
 import ScrollAnimator from "@/components/ScrollAnimator";
 import SEO from "@/components/SEO";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { ArrowLeft } from "lucide-react";
 
 const ProjectDetail = () => {
