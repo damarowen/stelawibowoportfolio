@@ -6,7 +6,9 @@ export interface Showcase {
   image: string;
   title: string;
   description: string;
+  feedImages?: string[];
 }
+
 
 export interface Project {
   id: string;
