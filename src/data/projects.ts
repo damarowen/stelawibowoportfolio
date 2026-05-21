@@ -96,5 +96,6 @@ export const projects: Project[] = [
       "A deep-dive case study walking through the full journey of a social media project — from initial research and strategy, through content execution, all the way to performance analysis. It highlights the thinking behind each decision and the measurable results that followed.",
     tools: ["Meta Business Suite", "Google Analytics", "Sprout Social", "Canva", "Notion"],
     liveUrl: "#",
+    slides: Array(10).fill(brandImg),
   },
 ];
