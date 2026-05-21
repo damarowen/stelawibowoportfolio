@@ -71,23 +71,53 @@ const ProjectDetail = () => {
         <div className="space-y-12 pt-6">
           {project.showcases.map((s, i) => (
             <ScrollAnimator key={i} delay={i * 100}>
-              <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
-                {/* Phone mockup with IG feed */}
-                <div className="flex justify-center md:justify-start">
-                  <div className="relative w-[280px] md:w-[320px] aspect-[9/19] rounded-[2.5rem] bg-card border-[8px] border-border shadow-2xl overflow-hidden navy-glow">
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-6 bg-background rounded-b-2xl z-10" />
-                    <div className="w-full h-full">
-                      <img src={s.image} alt={s.title} className="w-full h-full object-cover" />
+              <div className="space-y-8">
+                <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
+                  {/* Phone mockup with IG feed */}
+                  <div className="flex justify-center md:justify-start">
+                    <div className="relative w-[280px] md:w-[320px] aspect-[9/19] rounded-[2.5rem] bg-card border-[8px] border-border shadow-2xl overflow-hidden navy-glow">
+                      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-6 bg-background rounded-b-2xl z-10" />
+                      <div className="w-full h-full">
+                        <img src={s.image} alt={s.title} className="w-full h-full object-cover" />
+                      </div>
                     </div>
                   </div>
+                  {/* Description */}
+                  <div className="space-y-3 text-center md:text-left">
+                    <h3 className="text-xl md:text-2xl font-display font-semibold text-foreground">{s.title}</h3>
+                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{s.description}</p>
+                  </div>
                 </div>
-                {/* Description */}
-                <div className="space-y-3 text-center md:text-left">
-                  <h3 className="text-xl md:text-2xl font-display font-semibold text-foreground">{s.title}</h3>
-                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{s.description}</p>
-                </div>
+
+                {/* Feed design carousel */}
+                {s.feedImages && s.feedImages.length > 0 && (
+                  <div className="px-10 md:px-14 max-w-2xl mx-auto">
+                    <Carousel opts={{ loop: true }} className="w-full">
+                      <CarouselContent>
+                        {s.feedImages.map((img, idx) => (
+                          <CarouselItem key={idx}>
+                            <div className="aspect-square rounded-xl overflow-hidden border border-border bg-card navy-glow">
+                              <img
+                                src={img}
+                                alt={`${s.title} feed design ${idx + 1}`}
+                                className="w-full h-full object-cover"
+                                loading="lazy"
+                              />
+                            </div>
+                            <p className="mt-2 text-center text-xs text-muted-foreground">
+                              {idx + 1} / {s.feedImages!.length}
+                            </p>
+                          </CarouselItem>
+                        ))}
+                      </CarouselContent>
+                      <CarouselPrevious />
+                      <CarouselNext />
+                    </Carousel>
+                  </div>
+                )}
               </div>
             </ScrollAnimator>
+
           ))}
         </div>
       )}
