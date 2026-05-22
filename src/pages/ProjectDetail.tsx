@@ -84,7 +84,7 @@ const ProjectDetail = () => {
                       <CarouselContent>
                         {s.feedImages.map((img, idx) => (
                           <CarouselItem key={idx}>
-                            <div className="aspect-square rounded-xl overflow-hidden border border-border bg-card navy-glow">
+                            <div className="aspect-[4/5] rounded-xl overflow-hidden border border-border bg-card navy-glow">
                               <img
                                 src={img}
                                 alt={`${s.title} feed design ${idx + 1}`}

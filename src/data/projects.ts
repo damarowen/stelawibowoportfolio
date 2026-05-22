@@ -1,6 +1,17 @@
 import dashboardImg from "@/assets/project-dashboard.jpg";
 import landingImg from "@/assets/project-landing.jpg";
 import brandImg from "@/assets/project-brand.jpg";
+import feed1 from "@/assets/feed-1.png";
+import feed2 from "@/assets/feed-2.png";
+import feed3 from "@/assets/feed-3.png";
+import feed4 from "@/assets/feed-4.png";
+import feed5 from "@/assets/feed-5.png";
+import feed6 from "@/assets/feed-6.png";
+import feed7 from "@/assets/feed-7.png";
+import feed8 from "@/assets/feed-8.png";
+import feed9 from "@/assets/feed-9.png";
+
+const cohesiveFeedImages = [feed1, feed2, feed3, feed4, feed5, feed6, feed7, feed8, feed9];
 
 export interface Showcase {
   image: string;
@@ -38,7 +49,7 @@ export const projects: Project[] = [
         title: "Cohesive Feed Aesthetic",
         description:
           "A unified color palette, typography system, and grid layout that make every post feel like part of one intentional brand story.",
-        feedImages: Array(9).fill(dashboardImg),
+        feedImages: cohesiveFeedImages,
       },
       {
         image: landingImg,
