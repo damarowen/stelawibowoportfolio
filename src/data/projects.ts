@@ -19,6 +19,7 @@ import feed2_6 from "@/assets/feed2-6.png";
 import feed2_7 from "@/assets/feed2-7.png";
 import feed2_8 from "@/assets/feed2-8.png";
 import feed2_9 from "@/assets/feed2-9.png";
+import pelureIg from "@/assets/pelure-ig.png";
 
 const cohesiveFeedImages = [feed1, feed2, feed3, feed4, feed5, feed6, feed7, feed8, feed9];
 const contentPillarImages = [feed2_1, feed2_2, feed2_3, feed2_4, feed2_5, feed2_6, feed2_7, feed2_8, feed2_9];
@@ -62,7 +63,7 @@ export const projects: Project[] = [
         feedImages: cohesiveFeedImages,
       },
       {
-        image: landingImg,
+        image: pelureIg,
         title: "Content Pillar System",
         description:
           "Organized templates across distinct content pillars — education, inspiration, and engagement — so the feed stays varied yet visually balanced.",
