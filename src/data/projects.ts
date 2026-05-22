@@ -29,6 +29,7 @@ export interface Showcase {
   title: string;
   description: string;
   feedImages?: string[];
+  phoneAspect?: string;
 }
 
 
@@ -68,6 +69,7 @@ export const projects: Project[] = [
         description:
           "Organized templates across distinct content pillars — education, inspiration, and engagement — so the feed stays varied yet visually balanced.",
         feedImages: contentPillarImages,
+        phoneAspect: "9/16",
       },
     ],
   },
