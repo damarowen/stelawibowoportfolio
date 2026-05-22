@@ -68,13 +68,6 @@ export const projects: Project[] = [
           "Organized templates across distinct content pillars — education, inspiration, and engagement — so the feed stays varied yet visually balanced.",
         feedImages: contentPillarImages,
       },
-      {
-        image: brandImg,
-        title: "Campaign Visual Storytelling",
-        description:
-          "A campaign-driven feed where each tile builds on the last, guiding followers through a clear narrative arc from launch to conversion.",
-        feedImages: Array(9).fill(brandImg),
-      },
     ],
   },
 
