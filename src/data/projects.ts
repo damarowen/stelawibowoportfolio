@@ -10,8 +10,18 @@ import feed6 from "@/assets/feed-6.png";
 import feed7 from "@/assets/feed-7.png";
 import feed8 from "@/assets/feed-8.png";
 import feed9 from "@/assets/feed-9.png";
+import feed2_1 from "@/assets/feed2-1.png";
+import feed2_2 from "@/assets/feed2-2.png";
+import feed2_3 from "@/assets/feed2-3.png";
+import feed2_4 from "@/assets/feed2-4.png";
+import feed2_5 from "@/assets/feed2-5.png";
+import feed2_6 from "@/assets/feed2-6.png";
+import feed2_7 from "@/assets/feed2-7.png";
+import feed2_8 from "@/assets/feed2-8.png";
+import feed2_9 from "@/assets/feed2-9.png";
 
 const cohesiveFeedImages = [feed1, feed2, feed3, feed4, feed5, feed6, feed7, feed8, feed9];
+const contentPillarImages = [feed2_1, feed2_2, feed2_3, feed2_4, feed2_5, feed2_6, feed2_7, feed2_8, feed2_9];
 
 export interface Showcase {
   image: string;
@@ -56,7 +66,7 @@ export const projects: Project[] = [
         title: "Content Pillar System",
         description:
           "Organized templates across distinct content pillars — education, inspiration, and engagement — so the feed stays varied yet visually balanced.",
-        feedImages: Array(9).fill(landingImg),
+        feedImages: contentPillarImages,
       },
       {
         image: brandImg,
