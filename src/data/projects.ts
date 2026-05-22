@@ -66,7 +66,7 @@ export const projects: Project[] = [
         title: "Content Pillar System",
         description:
           "Organized templates across distinct content pillars — education, inspiration, and engagement — so the feed stays varied yet visually balanced.",
-        feedImages: Array(9).fill(landingImg),
+        feedImages: contentPillarImages,
       },
       {
         image: brandImg,
