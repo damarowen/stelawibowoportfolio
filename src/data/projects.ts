@@ -20,6 +20,7 @@ import feed2_7 from "@/assets/feed2-7.png";
 import feed2_8 from "@/assets/feed2-8.png";
 import feed2_9 from "@/assets/feed2-9.png";
 import pelureIg from "@/assets/pelure-ig.png";
+import bruleIg from "@/assets/brule-ig.png";
 
 const cohesiveFeedImages = [feed1, feed2, feed3, feed4, feed5, feed6, feed7, feed8, feed9];
 const contentPillarImages = [feed2_1, feed2_2, feed2_3, feed2_4, feed2_5, feed2_6, feed2_7, feed2_8, feed2_9];
@@ -56,7 +57,7 @@ export const projects: Project[] = [
     liveUrl: "#",
     showcases: [
       {
-        image: dashboardImg,
+        image: bruleIg,
         title: "Cohesive Feed Aesthetic",
         description:
           "A unified color palette, typography system, and grid layout that make every post feel like part of one intentional brand story.",
