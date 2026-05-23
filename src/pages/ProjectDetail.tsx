@@ -63,11 +63,9 @@ const ProjectDetail = () => {
                 <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
                   {/* Phone mockup with IG feed */}
                   <div className="flex justify-center md:justify-start">
-                    <div className="relative w-[280px] md:w-[320px] aspect-[9/19] rounded-[2.5rem] bg-card border-[8px] border-border shadow-2xl overflow-hidden navy-glow">
+                    <div className="relative w-[280px] md:w-[320px] rounded-[2.5rem] bg-card border-[8px] border-border shadow-2xl overflow-hidden navy-glow">
                       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-6 bg-background rounded-b-2xl z-10" />
-                      <div className="w-full h-full">
-                        <img src={s.image} alt={s.title} className="w-full h-full object-cover" />
-                      </div>
+                      <img src={s.image} alt={s.title} className="block w-full h-auto" />
                     </div>
                   </div>
                   {/* Description */}
