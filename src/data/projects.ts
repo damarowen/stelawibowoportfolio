@@ -58,9 +58,9 @@ export const projects: Project[] = [
     showcases: [
       {
         image: bruleIg,
-        title: "Cohesive Feed Aesthetic",
+        title: "F&B | Instagram Feed Design",
         description:
-          "A unified color palette, typography system, and grid layout that make every post feel like part of one intentional brand story.",
+          "Designed a cohesive Instagram feed system for BRÛLÉ, a fine-casual dining brand, translating its warm Espresso, Terracotta, and Amber brand palette into a scroll-stopping grid. Each post type — promotions, menu highlights, and drink features — follows a unified typography and layout system that reinforces the brand's indulgent yet approachable tone, creating an intentional brand story at a glance.",
         feedImages: cohesiveFeedImages,
       },
       {
