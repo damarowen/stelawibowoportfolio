@@ -65,9 +65,9 @@ export const projects: Project[] = [
       },
       {
         image: pelureIg,
-        title: "Content Pillar System",
+        title: "Skincare | Instagram Feed Design",
         description:
-          "Organized templates across distinct content pillars — education, inspiration, and engagement — so the feed stays varied yet visually balanced.",
+          "Developed a full Instagram feed system for Pélure Skin, a clean beauty brand, aligning every design decision, from soft blush tones to serif typography, with the brand's premium, dermatologist-trusted positioning. The content pillar system spans education, product launches, and social proof, keeping the feed visually balanced while serving distinct marketing goals.",
         feedImages: contentPillarImages,
       },
     ],
