@@ -92,7 +92,7 @@ export const projects: Project[] = [
       },
       {
         image: pelureCap,
-        title: "Hook-Driven Caption & Post - Skincare",
+        title: "Hook-Driven Caption & Post - Skincare".replace(/ /g, "\u00A0"),
         description:
           "Developed an Instagram caption for Pélure Skin that balances urgency with the brand's clean, aspirational tone, opening with a benefit-led hook and guiding the reader toward action without feeling pushy. The copy reflects a deep understanding of how skincare audiences respond to language that feels trustworthy, empowering, and effortlessly premium.",
       },
