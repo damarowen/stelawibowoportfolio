@@ -21,7 +21,8 @@ import feed2_8 from "@/assets/feed2-8.png";
 import feed2_9 from "@/assets/feed2-9.png";
 import pelureIg from "@/assets/pelure-ig.png";
 import bruleIg from "@/assets/brule-ig.png";
-
+import bruleCap from "@/assets/brule-cap.png";
+import pelureCap from "@/assets/pelure-cap.png";
 const cohesiveFeedImages = [feed1, feed2, feed3, feed4, feed5, feed6, feed7, feed8, feed9];
 const contentPillarImages = [feed2_1, feed2_2, feed2_3, feed2_4, feed2_5, feed2_6, feed2_7, feed2_8, feed2_9];
 
@@ -84,13 +85,13 @@ export const projects: Project[] = [
     liveUrl: "#",
     showcases: [
       {
-        image: bruleIg,
+        image: bruleCap,
         title: "Hook-Driven Caption",
         description:
           "A scroll-stopping opening line paired with a clear value statement and CTA. Crafted to spark curiosity in the first three seconds and keep readers engaged through the full caption.",
       },
       {
-        image: pelureIg,
+        image: pelureCap,
         title: "SEO-Optimized Caption",
         description:
           "Captions structured around targeted keywords and search intent. Designed to surface in Instagram search results and Explore while still feeling natural and on-brand.",
