@@ -84,22 +84,16 @@ export const projects: Project[] = [
     liveUrl: "#",
     showcases: [
       {
-        image: landingImg,
+        image: bruleIg,
         title: "Hook-Driven Caption",
         description:
           "A scroll-stopping opening line paired with a clear value statement and CTA. Crafted to spark curiosity in the first three seconds and keep readers engaged through the full caption.",
       },
       {
-        image: dashboardImg,
-        title: "SEO-Optimized Carousel",
+        image: pelureIg,
+        title: "SEO-Optimized Caption",
         description:
           "Captions structured around targeted keywords and search intent. Designed to surface in Instagram search results and Explore while still feeling natural and on-brand.",
-      },
-      {
-        image: brandImg,
-        title: "Story-Led Long Caption",
-        description:
-          "A narrative-driven caption that blends storytelling with brand voice, building emotional connection and guiding the audience toward a meaningful action.",
       },
     ],
   },
@@ -115,3 +109,4 @@ export const projects: Project[] = [
     slides: Array(10).fill(brandImg),
   },
 ];
+
