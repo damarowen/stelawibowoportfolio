@@ -85,13 +85,13 @@ export const projects: Project[] = [
     liveUrl: "#",
     showcases: [
       {
-        image: bruleIg,
+        image: bruleCap,
         title: "Hook-Driven Caption",
         description:
           "A scroll-stopping opening line paired with a clear value statement and CTA. Crafted to spark curiosity in the first three seconds and keep readers engaged through the full caption.",
       },
       {
-        image: pelureIg,
+        image: pelureCap,
         title: "SEO-Optimized Caption",
         description:
           "Captions structured around targeted keywords and search intent. Designed to surface in Instagram search results and Explore while still feeling natural and on-brand.",
