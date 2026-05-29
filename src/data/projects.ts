@@ -84,11 +84,6 @@ export const projects: Project[] = [
     liveUrl: "#",
     showcases: [
       {
-        image: landingImg,
-        title: "Hook-Driven Caption",
-        description:
-    showcases: [
-      {
         image: bruleIg,
         title: "Hook-Driven Caption",
         description:
@@ -101,6 +96,10 @@ export const projects: Project[] = [
           "Captions structured around targeted keywords and search intent. Designed to surface in Instagram search results and Explore while still feeling natural and on-brand.",
       },
     ],
+  },
+  {
+    id: "case-study",
+    title: "Case Study",
     description: "In-depth breakdown of strategy, execution, and measurable results.",
     image: brandImg,
     fullDescription:
@@ -110,3 +109,4 @@ export const projects: Project[] = [
     slides: Array(10).fill(brandImg),
   },
 ];
+
