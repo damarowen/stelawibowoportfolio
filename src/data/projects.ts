@@ -20,7 +20,6 @@ import feed2_7 from "@/assets/feed2-7.png";
 import feed2_8 from "@/assets/feed2-8.png";
 import feed2_9 from "@/assets/feed2-9.png";
 import pelureIg from "@/assets/pelure-ig.png";
-import pelureIg from "@/assets/pelure-ig.png";
 import bruleIg from "@/assets/brule-ig.png";
 import bruleCap from "@/assets/brule-cap.png";
 import pelureCap from "@/assets/pelure-cap.png";
