@@ -86,15 +86,15 @@ export const projects: Project[] = [
     showcases: [
       {
         image: bruleCap,
-        title: "Hook-Driven Caption",
+        title: "Hook-Driven Caption & Post - F&B",
         description:
-          "A scroll-stopping opening line paired with a clear value statement and CTA. Crafted to spark curiosity in the first three seconds and keep readers engaged through the full caption.",
+          "Crafted an Instagram caption for BRÛLÉ that leads with a punchy, craveable hook and closes with a clear value-driven CTA, written entirely in the brand's warm, indulgent fine-dining voice. The copy is designed to stop the scroll in the first line, deliver the offer instantly, and feel native to how a premium F&B brand speaks to its audience on social media.",
       },
       {
         image: pelureCap,
-        title: "SEO-Optimized Caption",
+        title: "Hook-Driven Caption & Post - Skincare",
         description:
-          "Captions structured around targeted keywords and search intent. Designed to surface in Instagram search results and Explore while still feeling natural and on-brand.",
+          "Developed an Instagram caption for Pélure Skin that balances urgency with the brand's clean, aspirational tone, opening with a benefit-led hook and guiding the reader toward action without feeling pushy. The copy reflects a deep understanding of how skincare audiences respond to language that feels trustworthy, empowering, and effortlessly premium.",
       },
     ],
   },
